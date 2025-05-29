@@ -1,6 +1,0 @@
-[submodule "ecc-workflow-designer"]
-	path = ecc-workflow-designer
-	url = https://github.com/AleandroPresta/ecc-workflow-designer.git
-[submodule "ecc-workflow-api-server"]
-	path = ecc-workflow-api-server
-	url = https://github.com/AleandroPresta/ecc-workflow-api-server.git

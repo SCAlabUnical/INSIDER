@@ -1073,7 +1073,7 @@ angular.module('app', ['flowChart',])
 							<div class="modal-header d-flex justify-content-between">
 							  <h5 class="modal-title" id="resultModalLabel">Results</h5>
 							  <div>
-								<button type="button" class="btn btn-primary" ng-click="adviseSolution(services)">Advise</button>
+								<button type="button" class="btn btn-primary" ng-click="adviseSolution(services)">Recommend a deployment</button>
 								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 							  </div>
 							</div>
@@ -1327,7 +1327,7 @@ angular.module('app', ['flowChart',])
                 <div class="spinner-border spinner-border-sm text-primary me-2" role="status">
                   <span class="visually-hidden">Loading...</span>
                 </div>
-                <strong>Advising...</strong>
+                <strong>Recommending...</strong>
               </div>
             `;
 			document.body.appendChild(loadingIndicator);
@@ -1388,7 +1388,7 @@ angular.module('app', ['flowChart',])
 				  <div class="modal-dialog modal-fullscreen modal-dialog-centered">
 					<div class="modal-content">
 					  <div class="modal-header">
-						<h5 class="modal-title" id="adviseResultModalLabel">Advising Results</h5>
+						<h5 class="modal-title" id="adviseResultModalLabel">Recommended Deployment</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					  </div>
 					  <div class="modal-body">

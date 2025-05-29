@@ -1,0 +1,736 @@
+{
+	"nodes": [
+		{
+			"name": "Taxi",
+			"type": "Device",
+			"id": 4,
+			"description": "Vehicle for passenger transport",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "low",
+				"network_bandwidth": "very low"
+			},
+			"x": 27.615386962890625,
+			"y": 688.3846130371094,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["IoT"]
+		},
+		{
+			"name": "Cyber-Physical Interface",
+			"type": "Communication",
+			"id": 5,
+			"description": "Bridges data between physical devices and digital components",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 321.23077392578125,
+			"y": 688.3846435546875,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Device-based Traffic Monitor",
+			"type": "Device",
+			"id": 15,
+			"description": "Capture real-time traffic conditions using road sensors",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "low",
+				"network_bandwidth": "very low"
+			},
+			"x": 27.69232177734375,
+			"y": 566.1538925170898,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["IoT"]
+		},
+		{
+			"name": "Cloud-based Traffic Monitor",
+			"type": "Device",
+			"id": 16,
+			"description": "Capture real-time traffic conditions using various online sources",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "low",
+				"network_bandwidth": "very low"
+			},
+			"x": 24.615386962890625,
+			"y": 436.92308807373047,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["IoT"]
+		},
+		{
+			"name": "Event Monitor",
+			"type": "Device",
+			"id": 17,
+			"description": "Monitors the presence of public events, such as soccer matches, concerts, and shows, which can increase traffic congestion or cause a surge in customer requests",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "low",
+				"network_bandwidth": "very low"
+			},
+			"x": 20,
+			"y": 313.8461608886719,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["IoT"]
+		},
+		{
+			"name": "Passenger",
+			"type": "Device",
+			"id": 18,
+			"description": "",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "low",
+				"network_bandwidth": "very low"
+			},
+			"x": 27.692306518554688,
+			"y": 816.9231033325195,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["IoT"]
+		},
+		{
+			"name": "Cyber-Physical Interface",
+			"type": "Communication",
+			"id": 19,
+			"description": "Bridges data between physical devices and digital components",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 321.53845977783203,
+			"y": 564.6153793334961,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Cyber-Physical Interface",
+			"type": "Communication",
+			"id": 22,
+			"description": "Bridges data between physical devices and digital components",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 320.0000305175781,
+			"y": 812.3077049255371,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Web Interface",
+			"type": "Communication",
+			"id": 21,
+			"description": "Used to retrieve data from the internet",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 326.1538543701172,
+			"y": 312.30771255493164,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Web Interface",
+			"type": "Communication",
+			"id": 20,
+			"description": "Used to retrieve data from the internet",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 327.6923370361328,
+			"y": 436.9231071472168,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Publish-Subscriber Broker",
+			"type": "Communication",
+			"id": 6,
+			"description": "Enables asynchronous message exchange among tasks",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 610.923095703125,
+			"y": 689.3846130371094,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Publish-Subscriber Broker",
+			"type": "Communication",
+			"id": 23,
+			"description": "Enables asynchronous message exchange among tasks",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 609.2308197021484,
+			"y": 809.230770111084,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Publish-Subscriber Broker",
+			"type": "Communication",
+			"id": 24,
+			"description": "Enables asynchronous message exchange among tasks",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 612.3076934814453,
+			"y": 310.76926040649414,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Publish-Subscriber Broker",
+			"type": "Communication",
+			"id": 25,
+			"description": "Enables asynchronous message exchange among tasks",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 612.3076934814453,
+			"y": 438.46157455444336,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Streaming Protocol",
+			"type": "Communication",
+			"id": 26,
+			"description": "",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 607.6923217773438,
+			"y": 561.5384521484375,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking", "Streaming"]
+		},
+		{
+			"name": "Public Event Collector",
+			"type": "Computation",
+			"id": 27,
+			"description": "Scrapes information about public events from the web",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 970.7693481445312,
+			"y": 306.15381622314453,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Data Preparation", "ETL", "Compute"]
+		},
+		{
+			"name": "Real-Time Traffic Monitoring (Web)",
+			"type": "Computation",
+			"id": 29,
+			"description": "Monitors traffic and congestion conditions on the road using the Web",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 920.0000228881836,
+			"y": 438.4615173339844,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 350,
+			"height": 90,
+			"tags": ["Data Preparation", "ETL", "Compute"]
+		},
+		{
+			"name": "Web Data Storage",
+			"type": "Storage",
+			"id": 28,
+			"description": "Persistently stores data from events and cloud-based traffic monitors",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 1404.6155395507812,
+			"y": 326.15384674072266,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Document Database", "MongoDB", "Scalability"]
+		},
+		{
+			"name": "Real-Time Traffic Monitoring",
+			"type": "Computation",
+			"id": 30,
+			"description": "Monitors traffic and congestion conditions on the road",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 964.6155700683594,
+			"y": 563.0769271850586,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Compute", "Data Preparation", "ETL"]
+		},
+		{
+			"name": "Device Data Storage",
+			"type": "Storage",
+			"id": 31,
+			"description": "Stores data produced by taxis, passengers, and road traffic monitors",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 1353.8461608886719,
+			"y": 573.8460998535156,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Time Series Database", "IoT", "Managed", "Scalability"]
+		},
+		{
+			"name": "Taxi Monitoring",
+			"type": "Computation",
+			"id": 32,
+			"description": "Collects data from taxis and is responsible for cleaning and transforming the raw data into a usable format for the predictive model, filtering out noise, and normalizing data formats",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 955.3846435546875,
+			"y": 693.8461990356445,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Compute"]
+		},
+		{
+			"name": "Passenger Monitoring",
+			"type": "Computation",
+			"id": 33,
+			"description": "Collects data from passengers and is responsible for cleaning and transforming the raw data into a usable format for the predictive model, filtering out noise, and normalizing data formats",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 956.9231262207031,
+			"y": 809.2307968139648,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Compute"]
+		},
+		{
+			"name": "Location Prediction",
+			"type": "Computation",
+			"id": 34,
+			"description": "Determines the optimal locations for taxis to find new passengers",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 1338.4616394042969,
+			"y": 803.0769271850586,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Compute", "Machine Learning", "Prediction"]
+		},
+		{
+			"name": "ML Train",
+			"type": "Computation",
+			"id": 35,
+			"description": "Regularly updates the machine learning model, ensuring that the predictions remain accurate over time by incorporating feedback and new patterns detected in the data",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 1698.4615936279297,
+			"y": 576.9230880737305,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Compute", "Machine Learning", "Training"]
+		},
+		{
+			"name": "ML Storage",
+			"type": "Storage",
+			"id": 36,
+			"description": "Stores the machine learning model (e.g., the weights of the neural network), ensuring that the models are accessible for both re-training and real-time predictions",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 1695.3847045898438,
+			"y": 806.153881072998,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Object Storage", "Scalability", "Availability"]
+		}
+	],
+	"connections": [
+		{
+			"source": { "nodeID": 4, "connectorIndex": 0 },
+			"dest": { "nodeID": 5, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 5, "connectorIndex": 0 },
+			"dest": { "nodeID": 6, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 15, "connectorIndex": 0 },
+			"dest": { "nodeID": 19, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 16, "connectorIndex": 0 },
+			"dest": { "nodeID": 20, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 17, "connectorIndex": 0 },
+			"dest": { "nodeID": 21, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 18, "connectorIndex": 0 },
+			"dest": { "nodeID": 22, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 22, "connectorIndex": 0 },
+			"dest": { "nodeID": 23, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 21, "connectorIndex": 0 },
+			"dest": { "nodeID": 24, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 20, "connectorIndex": 0 },
+			"dest": { "nodeID": 25, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 19, "connectorIndex": 0 },
+			"dest": { "nodeID": 26, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 24, "connectorIndex": 0 },
+			"dest": { "nodeID": 27, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 27, "connectorIndex": 0 },
+			"dest": { "nodeID": 28, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 25, "connectorIndex": 0 },
+			"dest": { "nodeID": 29, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 29, "connectorIndex": 0 },
+			"dest": { "nodeID": 28, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 26, "connectorIndex": 0 },
+			"dest": { "nodeID": 30, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 30, "connectorIndex": 0 },
+			"dest": { "nodeID": 31, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 6, "connectorIndex": 0 },
+			"dest": { "nodeID": 32, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 23, "connectorIndex": 0 },
+			"dest": { "nodeID": 33, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 32, "connectorIndex": 0 },
+			"dest": { "nodeID": 31, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 31, "connectorIndex": 1 },
+			"dest": { "nodeID": 34, "connectorIndex": 1 }
+		},
+		{
+			"source": { "nodeID": 32, "connectorIndex": 0 },
+			"dest": { "nodeID": 34, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 33, "connectorIndex": 0 },
+			"dest": { "nodeID": 31, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 31, "connectorIndex": 0 },
+			"dest": { "nodeID": 35, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 28, "connectorIndex": 0 },
+			"dest": { "nodeID": 35, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 34, "connectorIndex": 0 },
+			"dest": { "nodeID": 36, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 35, "connectorIndex": 1 },
+			"dest": { "nodeID": 36, "connectorIndex": 1 }
+		}
+	],
+	"nextNodeID": 37
+}

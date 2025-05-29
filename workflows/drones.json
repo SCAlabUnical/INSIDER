@@ -1,0 +1,708 @@
+{
+	"nodes": [
+		{
+			"name": "Traffic Monitor",
+			"type": "Device",
+			"id": 4,
+			"description": "",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "low",
+				"network_bandwidth": "very low"
+			},
+			"x": 59,
+			"y": 91,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"image": "http://127.0.0.1:5501/assets/images/camera.svg",
+			"tags": []
+		},
+		{
+			"name": "Official Requests",
+			"type": "Device",
+			"id": 5,
+			"description": "",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "low",
+				"network_bandwidth": "very low"
+			},
+			"x": 58,
+			"y": 221,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"image": "http://127.0.0.1:5501/assets/images/blank.svg",
+			"tags": []
+		},
+		{
+			"name": "Event Monitor",
+			"type": "Device",
+			"id": 6,
+			"description": "",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "low",
+				"network_bandwidth": "very low"
+			},
+			"x": 57,
+			"y": 342,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": []
+		},
+		{
+			"name": "Drone",
+			"type": "Device",
+			"id": 7,
+			"description": "",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "low",
+				"network_bandwidth": "very low"
+			},
+			"x": 57,
+			"y": 462,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": []
+		},
+		{
+			"name": "User Device",
+			"type": "Device",
+			"id": 8,
+			"description": "",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "low",
+				"network_bandwidth": "very low"
+			},
+			"x": 57,
+			"y": 588,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": []
+		},
+		{
+			"name": "Web Interface",
+			"type": "Communication",
+			"id": 9,
+			"description": "Used to retrieve data from the internet",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 363,
+			"y": 90,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Web Interface",
+			"type": "Communication",
+			"id": 10,
+			"description": "Used to retrieve data from the internet",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 362,
+			"y": 221,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Web Interface",
+			"type": "Communication",
+			"id": 11,
+			"description": "Used to retrieve data from the internet",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 360,
+			"y": 589,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Cyber-Physical Interface",
+			"type": "Communication",
+			"id": 12,
+			"description": "Bridges data between physical devices and digital components",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 361,
+			"y": 343,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Cyber-Physical Interface",
+			"type": "Communication",
+			"id": 13,
+			"description": "Bridges data between physical devices and digital components",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 358,
+			"y": 461,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Publish-Subscribe Broker",
+			"type": "Communication",
+			"id": 14,
+			"description": "Enables asynchronous message exchange among tasks",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 661.2902984619141,
+			"y": 89.24731063842773,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Publish-Subscribe Broker",
+			"type": "Communication",
+			"id": 15,
+			"description": "Enables asynchronous message exchange among tasks",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 654.8386688232422,
+			"y": 588.172046661377,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Streaming Protocol",
+			"type": "Communication",
+			"id": 16,
+			"description": "Transfers continuous data streams to other tasks",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 658.0644989013672,
+			"y": 220.43008995056152,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Streaming", "Networking"]
+		},
+		{
+			"name": "Streaming Protocol",
+			"type": "Communication",
+			"id": 17,
+			"description": "Transfers continuous data streams to other tasks",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 656.9892120361328,
+			"y": 343.0107421875,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Streaming", "Networking"]
+		},
+		{
+			"name": "Streaming Protocol",
+			"type": "Communication",
+			"id": 18,
+			"description": "Transfers continuous data streams to other tasks",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 656.9892578125,
+			"y": 462.36558532714844,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Streaming", "Networking"]
+		},
+		{
+			"name": "Traffic Collector",
+			"type": "Computation",
+			"id": 19,
+			"description": "Gathers data from street cameras to identify potential causes of fires and ensure comprehensive analysis",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 968.817138671875,
+			"y": 89.24730682373047,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Data Preparation", "Data Collection", "Compute"]
+		},
+		{
+			"name": "Requests Collector",
+			"type": "Computation",
+			"id": 20,
+			"description": "Gathers requests submitted by private citizens or public authorities through phone, web forms, or mobile applications, validated by operators before processing",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 970.9677429199219,
+			"y": 220.4300994873047,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Data Preparation", "Data Collection", "Compute"]
+		},
+		{
+			"name": "Event Storage",
+			"type": "Storage",
+			"id": 21,
+			"description": "Stores the requests and the street camera video feeds for further analysis",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 1295.6989288330078,
+			"y": 219.35482788085938,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["NoSQL", "Managed", "Scalability", "Performance"],
+			"image": "http://127.0.0.1:5501/assets/images/database.svg"
+		},
+		{
+			"name": "Event Collector",
+			"type": "Computation",
+			"id": 22,
+			"description": "Monitors data from ground sensors, adjusting drone patrol routes when anomalies such as abnormal temperatures or smoke are detected",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 967.741943359375,
+			"y": 343.01073837280273,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Data Preparation", "Data Collection", "Compute"]
+		},
+		{
+			"name": "Drone Manager",
+			"type": "Computation",
+			"id": 23,
+			"description": "",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 967.7417907714844,
+			"y": 463.4408721923828,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": []
+		},
+		{
+			"name": "Device Data Storage",
+			"type": "Storage",
+			"id": 24,
+			"description": "Stores the drone mission data, including video feeds, drone locations, and meteorological information",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 1288.1719360351562,
+			"y": 463.440860748291,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Time Series Database", "IoT", "Managed", "Scalability"],
+			"image": "http://127.0.0.1:5501/assets/images/database.svg"
+		},
+		{
+			"name": "ML Model",
+			"type": "Computation",
+			"id": 25,
+			"description": "Machine learning model used to predict potential fire outbreaks based on the data collected by the drones",
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "moderate",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"x": 969.8925170898438,
+			"y": 590.3225555419922,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Compute", "Machine Learning"]
+		},
+		{
+			"name": "ML Storage",
+			"type": "Storage",
+			"id": 26,
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 1289.247314453125,
+			"y": 589.2472534179688,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"description": "Manages training data for machine learning",
+			"tags": ["Machine Learning", "Object Storage"],
+			"image": "http://127.0.0.1:5501/assets/images/database.svg"
+		},
+		{
+			"name": "ML Train",
+			"type": "Computation",
+			"id": 27,
+			"quantity": 1,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"x": 1624.7312316894531,
+			"y": 461.2903251647949,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"description": "Builds and refines machine learning models",
+			"tags": ["Machine Learning", "AI", "Compute"]
+		}
+	],
+	"connections": [
+		{
+			"source": { "nodeID": 4, "connectorIndex": 0 },
+			"dest": { "nodeID": 9, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 5, "connectorIndex": 0 },
+			"dest": { "nodeID": 10, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 8, "connectorIndex": 0 },
+			"dest": { "nodeID": 11, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 7, "connectorIndex": 0 },
+			"dest": { "nodeID": 13, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 6, "connectorIndex": 0 },
+			"dest": { "nodeID": 12, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 13, "connectorIndex": 0 },
+			"dest": { "nodeID": 18, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 11, "connectorIndex": 0 },
+			"dest": { "nodeID": 15, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 12, "connectorIndex": 0 },
+			"dest": { "nodeID": 17, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 10, "connectorIndex": 0 },
+			"dest": { "nodeID": 16, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 9, "connectorIndex": 0 },
+			"dest": { "nodeID": 14, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 19, "connectorIndex": 0 },
+			"dest": { "nodeID": 21, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 20, "connectorIndex": 0 },
+			"dest": { "nodeID": 21, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 14, "connectorIndex": 0 },
+			"dest": { "nodeID": 19, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 16, "connectorIndex": 0 },
+			"dest": { "nodeID": 20, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 17, "connectorIndex": 0 },
+			"dest": { "nodeID": 22, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 22, "connectorIndex": 0 },
+			"dest": { "nodeID": 21, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 18, "connectorIndex": 0 },
+			"dest": { "nodeID": 23, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 15, "connectorIndex": 0 },
+			"dest": { "nodeID": 23, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 23, "connectorIndex": 0 },
+			"dest": { "nodeID": 24, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 23, "connectorIndex": 1 },
+			"dest": { "nodeID": 25, "connectorIndex": 1 }
+		},
+		{
+			"source": { "nodeID": 25, "connectorIndex": 0 },
+			"dest": { "nodeID": 26, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 21, "connectorIndex": 0 },
+			"dest": { "nodeID": 27, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 24, "connectorIndex": 0 },
+			"dest": { "nodeID": 27, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 26, "connectorIndex": 0 },
+			"dest": { "nodeID": 27, "connectorIndex": 0 }
+		}
+	],
+	"nextNodeID": 28
+}

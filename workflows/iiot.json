@@ -1,0 +1,497 @@
+{
+	"nodes": [
+		{
+			"name": "Routing Actuator",
+			"type": "Device",
+			"id": 4,
+			"description": "",
+			"quantity": 1,
+			"parameters": {},
+			"x": 53,
+			"y": 72,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"image": "http://localhost:3000/assets/images/blank.svg",
+			"tags": []
+		},
+		{
+			"name": "Conveyor Belt",
+			"type": "Device",
+			"id": 5,
+			"description": "",
+			"quantity": 1,
+			"parameters": {},
+			"x": 56.17240905761719,
+			"y": 178.93101501464844,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"image": "http://localhost:3000/assets/images/modular_belt.svg",
+			"tags": []
+		},
+		{
+			"name": "Camera",
+			"type": "Device",
+			"id": 6,
+			"description": "",
+			"quantity": 1,
+			"parameters": {},
+			"x": 49,
+			"y": 359.4482727050781,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"image": "http://localhost:3000/assets/images/camera.svg",
+			"tags": []
+		},
+		{
+			"name": "Publish-Subscribe Broker",
+			"type": "Communication",
+			"id": 8,
+			"description": "Enables asynchronous message exchange among tasks",
+			"quantity": 1,
+			"parameters": {},
+			"x": 649.7053833007812,
+			"y": 123.03883361816406,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Cyber-Physical Interface",
+			"type": "Communication",
+			"id": 7,
+			"description": "Bridges data between physical devices and digital components",
+			"quantity": 1,
+			"parameters": {},
+			"x": 359.3793029785156,
+			"y": 121.96551513671875,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Cyber-Physical Interface",
+			"type": "Communication",
+			"id": 9,
+			"description": "Bridges data between physical devices and digital components",
+			"quantity": 1,
+			"parameters": [],
+			"x": 360.7980194091797,
+			"y": 356.7672424316406,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": ["Integration", "Messaging", "Networking"]
+		},
+		{
+			"name": "Streaming Protocol",
+			"type": "Communication",
+			"id": 10,
+			"quantity": 1,
+			"x": 661.3269348144531,
+			"y": 354.5613250732422,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"parameters": {
+				"execution_time": "low",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"description": "Transfers continuous data streams to other tasks",
+			"tags": ["Integration", "Streaming", "Networking"]
+		},
+		{
+			"name": "Data Preprocessing",
+			"type": "Computation",
+			"id": 11,
+			"quantity": 1,
+			"x": 1203.8522338867188,
+			"y": 177.28060913085938,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"parameters": {
+				"execution_time": "low",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"description": "Transforms raw data into a clean, usable format",
+			"tags": ["Data Processing", "ETL", "Compute"]
+		},
+		{
+			"name": "Plant Optimization & Management",
+			"type": "Computation",
+			"id": 12,
+			"quantity": 1,
+			"x": 1035.2444610595703,
+			"y": 11.715068817138672,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 350,
+			"height": 90,
+			"parameters": {
+				"execution_time": "low",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"description": "Provides real-time performance analysis and control",
+			"tags": ["Monitoring", "Observability", "Logs"]
+		},
+		{
+			"name": "Actuation Execution Planner",
+			"type": "Computation",
+			"id": 13,
+			"quantity": 1,
+			"x": 1052.0079040527344,
+			"y": 369.44561767578125,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"parameters": {
+				"execution_time": "low",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
+			"description": "Schedules device actuation using preprocessed data",
+			"tags": ["Automation", "Scheduling"]
+		},
+		{
+			"name": "Object Classifier",
+			"type": "Computation",
+			"id": 14,
+			"quantity": 1,
+			"x": 1050.7419891357422,
+			"y": 516.5647850036621,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"description": "Identifies and categorizes objects in captured images",
+			"tags": ["Machine Learning", "Deployment"],
+			"image": "http://localhost:3000/assets/images/machine_learning.svg"
+		},
+		{
+			"name": "Event Storage",
+			"type": "Storage",
+			"id": 16,
+			"quantity": 1,
+			"x": 1938.367301940918,
+			"y": 350.0872802734375,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"description": "Stores and manages event data for analysis",
+			"tags": ["Time Series Database"],
+			"image": "http://localhost:3000/assets/images/database.svg"
+		},
+		{
+			"name": "Object Storage",
+			"type": "Storage",
+			"id": 17,
+			"quantity": 1,
+			"x": 1939.7423400878906,
+			"y": 187.29808044433594,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"description": "Holds image and video data from cameras",
+			"tags": ["Object Storage"],
+			"image": "http://localhost:3000/assets/images/database.svg"
+		},
+		{
+			"name": "Storage Manager",
+			"type": "Computation",
+			"id": 18,
+			"description": "",
+			"quantity": 1,
+			"parameters": [
+				{ "name": "Execution Time", "type": "<=", "value": "100" }
+			],
+			"x": 1581.6236572265625,
+			"y": 186.9489288330078,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"tags": []
+		},
+		{
+			"name": "ML Storage",
+			"type": "Storage",
+			"id": 19,
+			"quantity": 1,
+			"x": 1997.916114807129,
+			"y": 611.1392364501953,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"description": "Manages training data for machine learning",
+			"tags": ["Machine Learning", "Object Storage"],
+			"image": "http://localhost:3000/assets/images/database.svg"
+		},
+		{
+			"name": "ML Trainer",
+			"type": "Computation",
+			"id": 20,
+			"quantity": 1,
+			"x": 1530.230484008789,
+			"y": 708.3405647277832,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 250,
+			"height": 90,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"description": "Builds and refines machine learning models",
+			"tags": ["Machine Learning", "AI", "Compute"]
+		},
+		{
+			"name": "Performance Checking & Labeling",
+			"type": "Computation",
+			"id": 21,
+			"quantity": 1,
+			"x": 1535.4947204589844,
+			"y": 442.46800231933594,
+			"inputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"outputConnectors": [
+				{ "name": "", "direction": "x" },
+				{ "name": "", "direction": "y" }
+			],
+			"width": 350,
+			"height": 90,
+			"parameters": {
+				"execution_time": "high",
+				"power_consumption": "high",
+				"network_bandwidth": "very high"
+			},
+			"description": "Evaluates system performance and enables data labeling",
+			"tags": ["Monitoring", "Observability", "Compute"]
+		}
+	],
+	"connections": [
+		{
+			"source": { "nodeID": 5, "connectorIndex": 0 },
+			"dest": { "nodeID": 7, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 4, "connectorIndex": 0 },
+			"dest": { "nodeID": 7, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 7, "connectorIndex": 0 },
+			"dest": { "nodeID": 8, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 6, "connectorIndex": 0 },
+			"dest": { "nodeID": 9, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 9, "connectorIndex": 0 },
+			"dest": { "nodeID": 10, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 8, "connectorIndex": 0 },
+			"dest": { "nodeID": 11, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 8, "connectorIndex": 0 },
+			"dest": { "nodeID": 13, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 10, "connectorIndex": 0 },
+			"dest": { "nodeID": 14, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 12, "connectorIndex": 1 },
+			"dest": { "nodeID": 13, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 13, "connectorIndex": 1 },
+			"dest": { "nodeID": 14, "connectorIndex": 1 }
+		},
+		{
+			"source": { "nodeID": 11, "connectorIndex": 0 },
+			"dest": { "nodeID": 18, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 13, "connectorIndex": 0 },
+			"dest": { "nodeID": 18, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 14, "connectorIndex": 0 },
+			"dest": { "nodeID": 18, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 18, "connectorIndex": 0 },
+			"dest": { "nodeID": 16, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 18, "connectorIndex": 0 },
+			"dest": { "nodeID": 17, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 12, "connectorIndex": 0 },
+			"dest": { "nodeID": 18, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 11, "connectorIndex": 1 },
+			"dest": { "nodeID": 13, "connectorIndex": 1 }
+		},
+		{
+			"source": { "nodeID": 14, "connectorIndex": 0 },
+			"dest": { "nodeID": 19, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 21, "connectorIndex": 1 },
+			"dest": { "nodeID": 20, "connectorIndex": 1 }
+		},
+		{
+			"source": { "nodeID": 20, "connectorIndex": 0 },
+			"dest": { "nodeID": 19, "connectorIndex": 0 }
+		},
+		{
+			"source": { "nodeID": 21, "connectorIndex": 0 },
+			"dest": { "nodeID": 16, "connectorIndex": 0 }
+		}
+	],
+	"nextNodeID": 22
+}

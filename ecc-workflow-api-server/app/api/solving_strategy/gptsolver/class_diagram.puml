@@ -1,0 +1,41 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+package "api.solving_strategy.gptsolver" {
+    class solver {
+        +setupModel(model_choice: int): GptCaller
+        +setupFiles(performance_path: str): dict
+        +solve(workflow: dict, catalog: dict, model_choice: int): dict
+    }
+
+    abstract class PromptGenerator {
+        {abstract} +get_prompt(): str
+    }
+
+    class ServicePromptGenerator {
+        -prompt: str
+        +__init__(catalog: dict, workflow: dict, performance: dict, use_tags: bool, n: int)
+        +get_prompt(): str
+    }
+
+    class GptCaller {
+        -key: str
+        -model: str
+        -temperature: float
+        -client: OpenAI
+        +__init__(model: str, temperature: float)
+        +call(developer_text: str, user_text: str)
+    }
+
+    class config {
+        +model_config: dict
+    }
+
+    ServicePromptGenerator --|> PromptGenerator
+    
+    solver ..> ServicePromptGenerator : uses
+    solver ..> GptCaller : uses
+    solver ..> config : uses model_config
+}
+
+@enduml

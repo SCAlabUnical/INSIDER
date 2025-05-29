@@ -1,0 +1,239 @@
+<svg
+    class="draggable-container"
+    xmlns="http://www.w3.org/2000/svg"
+    ng-mousedown="mouseDown($event)"
+    ng-mousemove="mouseMove($event)"
+>
+    <defs>
+        <linearGradient
+            spreadMethod="pad"
+            y2="0"
+            x2="0"
+            y1="1"
+            x1="0"
+            id="nodeBackgroundGradientDevice"
+        >
+            <stop
+                offset="0"
+                stop-opacity="0.99609"
+                stop-color="rgb(255, 255, 255)"
+            />
+        </linearGradient>
+        <linearGradient
+            spreadMethod="pad"
+            y2="0"
+            x2="0"
+            y1="1"
+            x1="0"
+            id="nodeBackgroundGradientComputation"
+        >
+            <stop
+                offset="0"
+                stop-opacity="0.99609"
+                stop-color="rgb(144,238,144)"
+            />
+        </linearGradient>
+        <linearGradient
+            spreadMethod="pad"
+            y2="0"
+            x2="0"
+            y1="1"
+            x1="0"
+            id="nodeBackgroundGradientStorage"
+        >
+            <stop
+                offset="0"
+                stop-opacity="0.99609"
+                stop-color="rgb(245, 222, 179)"
+            />
+        </linearGradient>
+        <linearGradient
+            spreadMethod="pad"
+            y2="0"
+            x2="0"
+            y1="1"
+            x1="0"
+            id="nodeBackgroundGradientCommunication"
+        >
+            <stop
+                offset="0"
+                stop-opacity="0.99609"
+                stop-color="rgb(135, 206, 235)"
+            />
+        </linearGradient>
+    </defs>
+
+    <g class="background-board">
+        <rect
+            class="background-board-rect"
+            ng-right-click="openContextMenuBackground($event)"
+        ></rect>
+    </g>
+
+    <g>
+        <g
+            ng-repeat="connection in chart.connections"
+            class="connection"
+            ng-mousedown="connectionMouseDown($event, connection)"
+        >
+            <path
+                ng-right-click="openContextMenuEdges($event, connection)"
+                ng-attr-class="{{connection.selected() && 'selected-connection-line' || (connection == mouseOverConnection && 'mouseover-connection-line' || 'connection-line')}}"
+                ng-attr-d="M {{connection.sourceCoordX()}}, {{connection.sourceCoordY()}}
+                     C {{connection.sourceTangentX()}}, {{connection.sourceTangentY()}}
+                       {{connection.destTangentX()}}, {{connection.destTangentY()}}
+                       {{connection.destCoordX()}}, {{connection.destCoordY()}}"
+                style="stroke: black"
+            ></path>
+
+            <text
+                ng-attr-class="{{connection.selected() && 'selected-connection-name' || (connection == mouseOverConnection && 'mouseover-connection-name' || 'connection-name')}}"
+                ng-attr-x="{{connection.middleX()}}"
+                ng-attr-y="{{connection.middleY()}}"
+                text-anchor="middle"
+                alignment-baseline="middle"
+            >
+                {{connection.name()}}
+            </text>
+        </g>
+    </g>
+
+    <g
+        ng-repeat="node in chart.nodes"
+        ng-mousedown="nodeMouseDown($event, node)"
+        ng-attr-transform="translate({{node.x()}}, {{node.y()}})"
+    >
+        <rect
+            ng-attr-class="{{node.selected() && 'selected-node-rect' || (node == mouseOverNode && 'mouseover-node-rect' || 'node-rect')}}"
+            ry="10"
+            rx="10"
+            x="0"
+            y="0"
+            ng-attr-width="{{node.width()}}"
+            ng-attr-height="{{node.height()}}"
+            fill="url(#nodeBackgroundGradient{{node.type()}})"
+            ng-right-click="openContextMenuNodes($event, node)"
+        ></rect>
+
+        <!-- Node name -->
+        <text
+            ng-attr-x="{{node.width()/2}}"
+            y="20"
+            text-anchor="middle"
+            alignment-baseline="middle"
+        >
+            {{node.name()}}
+        </text>
+
+        <!-- Node quantity -->
+        <text
+            ng-if="node.quantity() > 1"
+            ng-attr-x="{{node.width() - 20}}"
+            ng-attr-y="{{node.height() - 20}}"
+            text-anchor="middle"
+            alignment-baseline="middle"
+        >
+            {{node.quantity()}}
+        </text>
+        <!-- Node image -->
+
+        <image
+            class="node-image-{{node.id()}}"
+            height="50"
+            width="50"
+            ng-attr-y="{{node.height()/2 - 20}}"
+            ng-attr-x="{{node.width()/2 - 25}}"
+            href="{{node.image()}}"
+            ng-right-click="openContextMenuNodes($event, node)"
+        />
+
+        <!-- Input connector -->
+        <g
+            ng-repeat="connector in node.inputConnectors"
+            ng-mousedown="connectorMouseDown($event, node, connector, $index, true)"
+            class="connector input-connector"
+        >
+            <!-- Input connector name -->
+            <text
+                ng-attr-x="{{connector.x() + 20}}"
+                ng-attr-y="{{connector.y()}}"
+                text-anchor="left"
+                alignment-baseline="middle"
+            >
+                {{connector.name()}}
+                <!-- Output connector name (removable) -->
+            </text>
+
+            <!-- Input connector x-axis -->
+
+            <circle
+                ng-attr-class="{{connector == mouseOverConnector && 'mouseover-connector-circle' || 'connector-circle'}}"
+                ng-attr-r="{{connectorSize}}"
+                ng-attr-cx="{{connector.x()}}"
+                ng-attr-cy="{{connector.y()}}"
+            />
+        </g>
+
+        <!-- Output connectors -->
+        <g
+            ng-repeat="connector in node.outputConnectors"
+            ng-mousedown="connectorMouseDown($event, node, connector, $index, false)"
+            class="connector output-connector"
+        >
+            <text
+                ng-attr-x="{{connector.x() - 20}}"
+                ng-attr-y="{{connector.y()}}"
+                text-anchor="end"
+                alignment-baseline="middle"
+            >
+                {{connector.name()}}
+                <!-- Output connector name (removable) -->
+            </text>
+
+            <!-- Output connector x-axis -->
+
+            <circle
+                ng-attr-class="{{connector == mouseOverConnector && 'mouseover-connector-circle' || 'connector-circle'}}"
+                ng-attr-r="{{connectorSize}}"
+                ng-attr-cx="{{connector.x()}}"
+                ng-attr-cy="{{connector.y()}}"
+            />
+        </g>
+    </g>
+
+    <g ng-if="draggingConnection">
+        <path
+            class="dragging-connection dragging-connection-line"
+            ng-attr-d="M {{dragPoint1.x}}, {{dragPoint1.y}}
+                 C {{dragTangent1.x}}, {{dragTangent1.y}}
+                   {{dragTangent2.x}}, {{dragTangent2.y}}
+                   {{dragPoint2.x}}, {{dragPoint2.y}}"
+        ></path>
+
+        <!-- Circle that appears when creating a new connection at the start of the path -->
+
+        <circle
+            class="dragging-connection dragging-connection-endpoint"
+            r="4"
+            ng-attr-cx="{{dragPoint1.x}}"
+            ng-attr-cy="{{dragPoint1.y}}"
+        ></circle>
+
+        <!-- Circle that appears when creating a new connection at the end of the path -->
+        <circle
+            class="dragging-connection dragging-connection-endpoint"
+            r="4"
+            ng-attr-cx="{{dragPoint2.x}}"
+            ng-attr-cy="{{dragPoint2.y}}"
+        ></circle>
+    </g>
+
+    <rect
+        ng-if="dragSelecting"
+        class="drag-selection-rect"
+        ng-attr-x="{{dragSelectionRect.x}}"
+        ng-attr-y="{{dragSelectionRect.y}}"
+        ng-attr-width="{{dragSelectionRect.width}}"
+        ng-attr-height="{{dragSelectionRect.height}}"
+    ></rect>
+</svg>

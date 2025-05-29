@@ -1,0 +1,72 @@
+.data-grid {
+	display: grid;
+	grid-template-columns: 1fr 0.8fr 3fr;
+	gap: 1rem 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.data-grid-header {
+	background-color: var(--bs-light);
+	font-weight: 700;
+	padding: 0.75rem;
+	border-radius: 0.375rem;
+}
+
+.data-cell {
+	background: rgba(var(--bs-light-rgb), 0.5);
+	border-radius: 0.375rem;
+	padding: 0.75rem;
+	height: 100%;
+}
+
+.data-cell:hover {
+	background: rgba(var(--bs-primary-rgb), 0.05);
+}
+
+.aws-services-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 0.5rem;
+}
+
+.aws-service-card {
+	background: rgba(var(--bs-light-rgb), 0.5);
+	border-radius: 0.375rem;
+	padding: 0.75rem;
+}
+
+.json-table {
+	width: 100%;
+}
+
+.json-table.table-hover tbody tr:hover {
+	background-color: rgba(var(--bs-primary-rgb), 0.05);
+}
+
+.array-select {
+	border: none;
+	background: transparent;
+	width: 100%;
+	padding: 0;
+	color: var(--bs-primary);
+	cursor: pointer;
+}
+
+.array-select:focus {
+	outline: none;
+}
+
+.json-table td {
+	max-width: none;
+	vertical-align: top;
+}
+
+.json-table hr {
+	margin: 0.5rem 0;
+	opacity: 0.15;
+}
+
+.table thead th {
+	font-size: 1.25rem;
+	font-weight: bold;
+}

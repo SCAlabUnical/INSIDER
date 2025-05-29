@@ -1,0 +1,82 @@
+<div class="result-container">
+    <!-- Zoom Controls -->
+    <div class="zoom-controls position-absolute" style="top: 10px; right: 10px; z-index: 1000;">
+        <div class="btn-group-vertical" role="group">
+            <button type="button" class="btn btn-sm btn-outline-primary" ng-click="zoomIn()" title="Zoom In">
+                <i class="fas fa-plus"></i> +
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-primary" ng-click="resetZoom()" title="Reset Zoom">
+                <i class="fas fa-expand"></i> 1:1
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-primary" ng-click="zoomOut()" title="Zoom Out">
+                <i class="fas fa-minus"></i> −
+            </button>
+        </div>
+        <div class="text-center mt-2">
+            <small class="text-muted">{{(scale * 100).toFixed(0)}}%</small>
+        </div>
+    </div>
+    
+    <!-- Result Chart Container - Matching main flowchart structure exactly -->
+    <div 
+        class="result-chart-container zoom-element"
+        ng-style="{'transform': 'scale(' + scale + ')'}"
+        on-wheel="handleWheel($event)"
+        ng-if="staticChart">
+        <svg 
+            class="result-svg"
+            style="margin: 5px; display:block; border:none; background:#fafafa; width: 100%; height: 100%;">
+            
+            <defs>
+                <linearGradient id="nodeBackgroundGradientDevice" x1="0" y1="1" x2="0" y2="0" spreadMethod="pad">
+                    <stop offset="0" stop-opacity="0.99609" stop-color="rgb(255,255,255)"/>
+                </linearGradient>
+                <linearGradient id="nodeBackgroundGradientComputation" x1="0" y1="1" x2="0" y2="0" spreadMethod="pad">
+                    <stop offset="0" stop-opacity="0.99609" stop-color="rgb(144,238,144)"/>
+                </linearGradient>
+                <linearGradient id="nodeBackgroundGradientStorage" x1="0" y1="1" x2="0" y2="0" spreadMethod="pad">
+                    <stop offset="0" stop-opacity="0.99609" stop-color="rgb(245,222,179)"/>
+                </linearGradient>
+                <linearGradient id="nodeBackgroundGradientCommunication" x1="0" y1="1" x2="0" y2="0" spreadMethod="pad">
+                    <stop offset="0" stop-opacity="0.99609" stop-color="rgb(135,206,235)"/>
+                </linearGradient>
+            </defs>
+            <g>
+                <g ng-repeat="connection in staticChart.connections">
+                    <path
+                        ng-attr-d="M {{connection.sourceCoordX()}}, {{connection.sourceCoordY()}}
+                             C {{connection.sourceTangentX()}}, {{connection.sourceTangentY()}}
+                               {{connection.destTangentX()}}, {{connection.destTangentY()}}
+                               {{connection.destCoordX()}}, {{connection.destCoordY()}}"
+                        style="stroke: black; fill: none;"
+                    ></path>
+                    <text
+                        ng-attr-x="{{connection.middleX()}}"
+                        ng-attr-y="{{connection.middleY()}}"
+                        text-anchor="middle"
+                        alignment-baseline="middle"
+                        style="font-size: 12px; fill: #333;"
+                    >
+                        {{connection.name()}}
+                    </text>
+                </g>
+            </g>
+            <g ng-repeat="node in staticChart.nodes"
+               ng-attr-transform="translate({{node.x()}}, {{node.y()}})">
+                <rect
+                    ry="10" rx="10" x="0" y="0"
+                    ng-attr-width="{{node.width()}}"
+                    ng-attr-height="{{node.height()}}"
+                    ng-attr-fill="url(#nodeBackgroundGradient{{node.type()}})"
+                    style="stroke: #1976d2; stroke-width: 2;"
+                ></rect>
+                <text ng-attr-x="{{node.width()/2}}" y="20" text-anchor="middle" alignment-baseline="middle" style="font-size: 16px; font-weight: bold;">{{node.name()}}</text>
+                <text ng-attr-x="{{node.width()/2}}" y="40" text-anchor="middle" alignment-baseline="middle" style="font-size: 16px; font-weight: bold;">({{node.best_service()}})</text>
+                <text ng-if="node.quantity > 1" ng-attr-x="{{node.width() - 20}}" ng-attr-y="{{node.height() - 20}}" text-anchor="middle" alignment-baseline="middle" style="font-size: 12px;">{{node.quantity}}</text>            <image height="50" width="50" ng-attr-y="{{node.height()/2 - 20}}" ng-attr-x="{{node.width()/2 - 25}}" ng-attr-href="{{node.image}}" />
+        </g>
+    </svg>
+    </div>
+    <div ng-if="!staticChart" class="d-flex justify-content-center align-items-center w-100 h-100">
+        <p class="text-muted fs-2">No graph data to display.</p>
+    </div>
+</div>

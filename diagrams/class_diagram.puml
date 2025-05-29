@@ -1,0 +1,54 @@
+@startuml Workflow Designer - Minimal Class Diagram
+
+' Core classes
+class FlowchartViewModel {
+  +nodes: Array<Node>
+  +connections: Array<Connection>
+  +addNode(node: Node): void
+  +addConnection(connection: Connection): void
+}
+
+class Node {
+  +id: string
+  +type: string
+  +position: {x: number, y: number}
+  +inputs: Array<Port>
+  +outputs: Array<Port>
+}
+
+class Connection {
+  +sourceNode: Node
+  +sourcePort: Port
+  +targetNode: Node
+  +targetPort: Port
+}
+
+class Port {
+  +type: string
+  +canConnect(otherPort: Port): boolean
+}
+
+' Essential service
+class WorkflowService {
+  +saveWorkflow(): Promise<boolean>
+  +loadWorkflow(id: string): Promise<Workflow>
+}
+
+' Main data model
+class Workflow {
+  +id: string
+  +name: string
+  +nodes: Array<Node>
+  +connections: Array<Connection>
+}
+
+' Key relationships
+FlowchartViewModel *-- "0..*" Node
+FlowchartViewModel *-- "0..*" Connection
+Node *-- "0..*" Port
+Connection --> "1" Port: source
+Connection --> "1" Port: target
+WorkflowService --> "1" Workflow: manages
+Workflow "1" <--> "1" FlowchartViewModel
+
+@enduml

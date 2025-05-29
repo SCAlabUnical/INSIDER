@@ -1,0 +1,25 @@
+{
+	"name": "Cyber-Physical Interface",
+	"type": "Communication",
+	"id": 12,
+	"description": "Bridges data between physical devices and digital components",
+	"quantity": 1,
+	"parameters": {
+		"execution_time": "moderate",
+		"power_consumption": "moderate",
+		"network_bandwidth": "moderate"
+	},
+	"x": 361,
+	"y": 343,
+	"inputConnectors": [
+		{ "name": "", "direction": "x" },
+		{ "name": "", "direction": "y" }
+	],
+	"outputConnectors": [
+		{ "name": "", "direction": "x" },
+		{ "name": "", "direction": "y" }
+	],
+	"width": 250,
+	"height": 90,
+	"tags": ["Integration", "Messaging", "Networking"]
+}

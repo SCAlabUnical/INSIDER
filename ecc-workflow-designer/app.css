@@ -1,0 +1,325 @@
+:root {
+	--color-bg-primary: #d0d6df;
+	--color-bg-primary-offset: #f1f3f7;
+	--color-bg-secondary: #fff;
+	--color-text-primary: #3a3c42;
+	--color-text-primary-offset: #898c94;
+	--color-orange: #dc9960;
+	--color-green: #1eb8b1;
+	--color-purple: #657cc4;
+	--color-black: var(--color-text-primary);
+	--color-red: #d92027;
+}
+
+/*
+Generic reset.
+*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	color: var(--color-text-primary);
+}
+
+.test {
+	border: 5px red solid;
+	padding: 10;
+	margin: 10;
+	font-family: "Times New Roman";
+	font-style: italic;
+}
+
+/*
+Styles for nodes and connectors.
+*/
+
+.node-rect {
+	stroke: black;
+	stroke-width: 2;
+}
+
+.mouseover-node-rect {
+	stroke: black;
+	stroke-width: 4;
+}
+
+.selected-node-rect {
+	stroke: red;
+	stroke-width: 3;
+}
+
+.connector-circle {
+	fill: white;
+	stroke: black;
+	stroke-width: 2;
+}
+
+.mouseover-connector-circle {
+	fill: white;
+	stroke: black;
+	stroke-width: 3;
+}
+
+/*
+Style for connections.
+*/
+
+.connection-line {
+	stroke: gray;
+	stroke-width: 4;
+	fill: transparent;
+}
+
+.mouseover-connection-line {
+	stroke: gray;
+	stroke-width: 6;
+	fill: transparent;
+}
+
+.selected-connection-line {
+	stroke: red;
+	stroke-width: 4;
+	fill: transparent;
+}
+
+.connection-endpoint {
+	fill: gray;
+}
+
+.selected-connection-endpoint {
+	fill: red;
+}
+
+.mouseover-connection-endpoint {
+	fill: gray;
+}
+
+.connection-name {
+	fill: black;
+}
+
+.selected-connection-name {
+	fill: red;
+}
+
+.mouseover-connection-name {
+	fill: gray;
+}
+/*
+Style for the connection being dragged out.
+*/
+
+.dragging-connection {
+	pointer-events: none;
+}
+
+.dragging-connection-line {
+	stroke: gray;
+	stroke-width: 3;
+	fill: transparent;
+}
+
+.dragging-connection-endpoint {
+	fill: gray;
+}
+
+/*
+The element (in this case the SVG element) that contains the draggable elements.
+*/
+
+.draggable-container {
+	/* SVG container for the flowchart */
+	position: relative;
+}
+
+rect {
+	cursor: move;
+}
+
+/*
+Drag selection rectangle.
+*/
+
+.drag-selection-rect {
+	stroke: blue;
+	stroke-width: 2;
+	fill: transparent;
+}
+
+/* ADDED STYLES BY aleandro.presta */
+.app-container {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.json-container {
+	flex-basis: 30%;
+	flex-grow: 1;
+}
+
+#json-textarea {
+	resize: horizontal;
+}
+
+.flowchart-container {
+	flex-basis: 70%;
+	flex-grow: 1;
+	height: 100%;
+	width: 100%;
+}
+
+.zoom-element {
+	width: 300%;
+	height: 300%;
+	transform-origin: top left; /* Ensure scaling is from the top left corner */
+	transition: transform 0.2s ease;
+	overflow: hidden;
+}
+
+.json-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+#context-menu {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgba(#404040, 0.15);
+}
+
+.menu-list-custom {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0px; /* Overriding Bootstrap's left padding */
+	display: block;
+	width: 100%;
+	& + .menu-list {
+		border-top: 1px solid #ddd;
+	}
+}
+
+.menu-item-custom {
+	position: relative;
+}
+
+.menu-button-custom {
+	font: inherit;
+	border: 0;
+	padding: 8px 8px;
+	padding-right: 36px;
+	width: 100%;
+	border-radius: 8px;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-color: var(--color-bg-secondary);
+	cursor: pointer;
+	&:hover {
+		background-color: var(--color-bg-primary-offset);
+		& + .menu-sub-list {
+			display: flex;
+		}
+		svg {
+			stroke: var(--color-text-primary);
+		}
+	}
+}
+
+.background-board {
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+	background-color: white;
+}
+
+.background-board > rect {
+	width: 100%;
+	height: 100%;
+	fill: white;
+}
+
+#file-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	border-radius: 5px;
+}
+
+/* Make cursor inside the dropdown menu of the group button to pointer */
+a {
+	cursor: pointer;
+}
+
+/* Result Component Zoom Styles - Following main flowchart pattern exactly */
+.result-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/* Match flowchart-container - no overflow hidden here */
+}
+
+.result-chart-container {
+	/* Container that gets the zoom transformation - matches flow-chart directive behavior */
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.result-chart-container.zoom-element {
+	width: 300%;
+	height: 300%;
+	transform-origin: top left; /* Same as main flowchart */
+	transition: transform 0.2s ease;
+	overflow: hidden; /* Only the zoom-element has overflow hidden */
+}
+
+.result-svg {
+	cursor: grab;
+	/* Remove all zoom-related styling from SVG - it's now handled by the container */
+}
+
+.result-svg:active {
+	cursor: grabbing;
+}
+
+.zoom-controls {
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 8px;
+	padding: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	border: 1px solid #e0e0e0;
+}
+
+.zoom-controls .btn-group-vertical .btn {
+	border-radius: 4px;
+	margin-bottom: 2px;
+	min-width: 50px;
+	font-size: 12px;
+	padding: 4px 8px;
+}
+
+.zoom-controls .btn-group-vertical .btn:last-child {
+	margin-bottom: 0;
+}
+
+.zoom-controls .btn:hover {
+	background-color: #007bff;
+	color: white;
+	border-color: #007bff;
+}
+
+.zoom-controls small {
+	font-size: 10px;
+	font-weight: 500;
+}

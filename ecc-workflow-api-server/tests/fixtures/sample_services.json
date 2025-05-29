@@ -1,0 +1,51 @@
+[
+	{
+		"parameters": {
+			"execution_time": "high",
+			"power_consumption": "high",
+			"network_bandwidth": "very high"
+		}
+	},
+	{
+		"parameters": {
+			"execution_time": "moderate",
+			"power_consumption": "moderate",
+			"network_bandwidth": "moderate"
+		}
+	},
+	{
+		"parameters": {
+			"execution_time": "very low",
+			"power_consumption": "low",
+			"network_bandwidth": "very low"
+		}
+	},
+	{
+		"parameters": {
+			"execution_time": "high",
+			"power_consumption": "high",
+			"network_bandwidth": "high"
+		}
+	},
+	{
+		"parameters": {
+			"execution_time": "moderate",
+			"power_consumption": "low",
+			"network_bandwidth": "moderate"
+		}
+	},
+	{
+		"parameters": {
+			"execution_time": "moderate",
+			"power_consumption": "low",
+			"network_bandwidth": "very low"
+		}
+	},
+	{
+		"parameters": {
+			"execution_time": "low",
+			"power_consumption": "moderate",
+			"network_bandwidth": "moderate"
+		}
+	}
+]

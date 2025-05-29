@@ -1,0 +1,346 @@
+{
+	"service": [
+		{
+			"ID": 1,
+			"Service Name": "API Gateway",
+			"Service Type": "Communication",
+			"Service Category": "Networking",
+			"Description Short": "Manage APIs with security, monitoring, and scalability.",
+			"layers": ["cloud"],
+			"Tags": ["API Management", "Security", "Cloud"]
+		},
+		{
+			"ID": 2,
+			"Service Name": "App Engine",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Develop scalable apps without managing infrastructure.",
+			"layers": ["cloud"],
+			"Tags": ["Serverless", "Scalability", "Cloud"]
+		},
+		{
+			"ID": 3,
+			"Service Name": "BigQuery",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Fast, scalable data warehouse for analytics at scale.",
+			"layers": ["cloud"],
+			"Tags": ["Analytics", "Big Data", "Cloud"]
+		},
+		{
+			"ID": 4,
+			"Service Name": "Cloud Asset Inventory",
+			"Service Type": "Communication",
+			"Service Category": "Metadata",
+			"Description Short": "Catalog and track GCP assets and configurations.",
+			"layers": ["cloud"],
+			"Tags": ["Management", "Governance", "Cloud"]
+		},
+		{
+			"ID": 5,
+			"Service Name": "Cloud Bigtable",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Fast, scalable NoSQL database for large data workloads.",
+			"layers": ["cloud"],
+			"Tags": ["NoSQL", "Big Data", "Scalability"]
+		},
+		{
+			"ID": 6,
+			"Service Name": "Cloud Build",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Build and deploy apps with CI/CD pipelines.",
+			"layers": ["cloud"],
+			"Tags": ["Build", "Continuous Integration", "Automation"]
+		},
+		{
+			"ID": 7,
+			"Service Name": "Cloud Data Catalog",
+			"Service Type": "Communication",
+			"Service Category": "Metadata",
+			"Description Short": "Organize and search metadata for datasets and resources.",
+			"layers": ["cloud"],
+			"Tags": ["Governance", "Management", "Cloud"]
+		},
+		{
+			"ID": 8,
+			"Service Name": "Cloud Dataflow",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Stream and batch data processing with autoscaling.",
+			"layers": ["cloud"],
+			"Tags": ["Streaming", "Automation", "Scalability"]
+		},
+		{
+			"ID": 9,
+			"Service Name": "Cloud Datastore",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "NoSQL database for scalable, structured data storage.",
+			"layers": ["cloud"],
+			"Tags": ["NoSQL", "Database", "Scalable"]
+		},
+		{
+			"ID": 10,
+			"Service Name": "Cloud DNS",
+			"Service Type": "Communication",
+			"Service Category": "Networking",
+			"Description Short": "Host and manage scalable domain name systems.",
+			"layers": ["cloud"],
+			"Tags": ["DNS", "Networking", "Cloud"]
+		},
+		{
+			"ID": 11,
+			"Service Name": "Cloud Functions",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Run event-driven serverless functions in the cloud.",
+			"layers": ["cloud"],
+			"Tags": ["Serverless", "Automation", "Cloud"]
+		},
+		{
+			"ID": 12,
+			"Service Name": "Cloud IAM",
+			"Service Type": "Communication",
+			"Service Category": "Access Management",
+			"Description Short": "Manage permissions and access to GCP resources.",
+			"layers": ["cloud"],
+			"Tags": ["Access Management", "Identity", "Security"]
+		},
+		{
+			"ID": 13,
+			"Service Name": "Cloud Interconnect",
+			"Service Type": "Communication",
+			"Service Category": "Networking",
+			"Description Short": "Connect on-premise networks to GCP with low latency.",
+			"layers": ["cloud"],
+			"Tags": ["Networking", "Dedicated Connection", "Cloud"]
+		},
+		{
+			"ID": 14,
+			"Service Name": "Cloud Monitoring",
+			"Service Type": "Communication",
+			"Service Category": "Monitoring",
+			"Description Short": "Track and visualize performance metrics of services.",
+			"layers": ["cloud"],
+			"Tags": ["Monitoring", "Metrics", "Cloud"]
+		},
+		{
+			"ID": 15,
+			"Service Name": "Cloud Run",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Deploy serverless containers for scalable web services.",
+			"layers": ["cloud"],
+			"Tags": ["Serverless", "Containerized Applications", "Scalability"]
+		},
+		{
+			"ID": 16,
+			"Service Name": "Cloud SQL",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Managed relational database service for cloud apps.",
+			"layers": ["cloud"],
+			"Tags": ["Relational Database", "Managed", "SQL Server"]
+		},
+		{
+			"ID": 17,
+			"Service Name": "Cloud Storage",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Object storage for unstructured data with scalability.",
+			"layers": ["cloud"],
+			"Tags": ["Object Storage", "Backup", "Cloud"]
+		},
+		{
+			"ID": 18,
+			"Service Name": "Cloud VPN",
+			"Service Type": "Communication",
+			"Service Category": "Networking",
+			"Description Short": "Securely connect on-premise networks to GCP via VPN.",
+			"layers": ["cloud"],
+			"Tags": ["VPN", "Security", "Networking"]
+		},
+		{
+			"ID": 19,
+			"Service Name": "Compute Engine",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Customizable virtual machines for cloud computing.",
+			"layers": ["cloud"],
+			"Tags": ["Compute", "Scalability", "Cloud"]
+		},
+		{
+			"ID": 20,
+			"Service Name": "Compute Engine",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Run scalable, customizable virtual machines on GCP.",
+			"layers": ["cloud"],
+			"Tags": ["Compute", "Infrastructure", "Cloud"]
+		},
+		{
+			"ID": 21,
+			"Service Name": "Dataflow",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Streamline data pipelines with real-time processing.",
+			"layers": ["cloud"],
+			"Tags": ["Streaming Data", "Automation", "Scalability"]
+		},
+		{
+			"ID": 22,
+			"Service Name": "Dataproc",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Run Apache Spark/Hadoop clusters on the cloud.",
+			"layers": ["cloud"],
+			"Tags": ["Hadoop", "Spark", "Big Data"]
+		},
+		{
+			"ID": 23,
+			"Service Name": "Firebase Authentication",
+			"Service Type": "Communication",
+			"Service Category": "Authentication",
+			"Description Short": "Authenticate users with email, phone, or social logins.",
+			"layers": ["cloud"],
+			"Tags": ["Authentication", "User Management", "Security"]
+		},
+		{
+			"ID": 24,
+			"Service Name": "Firebase Cloud Messaging",
+			"Service Type": "Communication",
+			"Service Category": "Messaging",
+			"Description Short": "Send push notifications to devices and browsers.",
+			"layers": ["cloud"],
+			"Tags": ["Push Notifications", "Messaging", "Mobile"]
+		},
+		{
+			"ID": 25,
+			"Service Name": "Firebase Test Lab",
+			"Service Type": "Communication",
+			"Service Category": "Testing",
+			"Description Short": "Test apps on real devices hosted in the cloud.",
+			"layers": ["cloud"],
+			"Tags": ["App Testing", "Automation", "Mobile"]
+		},
+		{
+			"ID": 26,
+			"Service Name": "Google Distributed Cloud Edge",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Deploy apps and services at the network edge.",
+			"layers": ["cloud"],
+			"Tags": ["Edge Computing", "Performance", "Cloud"]
+		},
+		{
+			"ID": 27,
+			"Service Name": "Google Drive/Docs",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Cloud-based file storage and collaborative editing tools.",
+			"layers": ["cloud"],
+			"Tags": ["Document Storage", "Collaboration", "Cloud"]
+		},
+		{
+			"ID": 28,
+			"Service Name": "Google Kubernetes Engine (GKE)",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Managed Kubernetes for scaling apps",
+			"layers": ["on-premise", "cloud"],
+			"Tags": ["Containerized Applications", "Scalability", "Cloud"]
+		},
+		{
+			"ID": 29,
+			"Service Name": "Google Maps Platform",
+			"Service Type": "Communication",
+			"Service Category": "Mapping",
+			"Description Short": "Integrate maps, routes, and places into applications.",
+			"layers": ["cloud"],
+			"Tags": ["Maps", "Location", "Cloud"]
+		},
+		{
+			"ID": 30,
+			"Service Name": "IoT Core",
+			"Service Type": "Communication",
+			"Service Category": "Networking",
+			"Description Short": "Manage IoT devices and process their data streams.",
+			"layers": ["cloud"],
+			"Tags": ["IoT", "Device Management", "Cloud"]
+		},
+		{
+			"ID": 31,
+			"Service Name": "Memorystore",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Managed Redis and Memcached for low-latency caching.",
+			"layers": ["cloud"],
+			"Tags": ["In-Memory Cache", "Redis", "Cloud"]
+		},
+		{
+			"ID": 32,
+			"Service Name": "Persistent Disk",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Block storage for Compute Engine and Kubernetes.",
+			"layers": ["cloud"],
+			"Tags": ["Block Storage", "Persistent Storage", "Cloud"]
+		},
+		{
+			"ID": 33,
+			"Service Name": "Pub/Sub",
+			"Service Type": "Communication",
+			"Service Category": "Messaging",
+			"Description Short": "Messaging service for asynchronous app communication.",
+			"layers": ["cloud"],
+			"Tags": ["Messaging", "Real-Time", "Cloud"]
+		},
+		{
+			"ID": 34,
+			"Service Name": "Storage Transfer Service",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Transfer large datasets between storage environments.",
+			"layers": ["cloud"],
+			"Tags": ["Data Transfer", "Cloud", "Storage"]
+		},
+		{
+			"ID": 35,
+			"Service Name": "Transfer Appliance",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Transfer data to the cloud with physical devices.",
+			"layers": ["cloud"],
+			"Tags": ["Data Migration", "Cloud", "Storage"]
+		},
+		{
+			"ID": 36,
+			"Service Name": "Vertex AI",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Build, deploy, and manage machine learning models.",
+			"layers": ["cloud"],
+			"Tags": ["Machine Learning", "AI", "Automation"]
+		},
+		{
+			"ID": 37,
+			"Service Name": "Vertex AI Forecasting",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Generate time-series forecasts with machine learning.",
+			"layers": ["cloud"],
+			"Tags": ["Machine Learning", "Forecasting", "Automation"]
+		},
+		{
+			"ID": 38,
+			"Service Name": "Virtual Private Cloud",
+			"Service Type": "Communication",
+			"Service Category": "Networking",
+			"Description Short": "Private, secure, and flexible network infrastructure.",
+			"layers": ["cloud"],
+			"Tags": ["VPC", "Networking", "Security"]
+		}
+	]
+}

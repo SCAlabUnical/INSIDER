@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Docs</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>API Documentation</h1>
+            </header>
+            <section>
+                <h2>Endpoint: POST process_post_data</h2>
+                <p>
+                    This endpoint receives data from a POST request, processes
+                    it, and returns a JSON response.
+                </p>
+                <h3>Request</h3>
+                <p><strong>Method:</strong> POST</p>
+                <p><strong>Content-Type:</strong> application/json</p>
+                <h4>Request Body</h4>
+                <pre>
+{
+    "workflow": {...},
+    "catalog": {...}
+}
+            </pre
+                >
+                <h3>Response</h3>
+                <p><strong>Status Code:</strong> 200 OK</p>
+                <h4>Response Body</h4>
+                <pre>
+{
+    "message": "Workflow and catalog successfully received",
+    "result": {...}
+}
+            </pre
+                >
+            </section>
+            <section>
+                <h2>Code Explanation</h2>
+                <p>
+                    The <code>process_post_data</code> function handles the POST request:
+                </p>
+                <ol>
+                    <li>
+                        Receives the data from the request body and parses it
+                        from JSON.
+                    </li>
+                    <li>
+                        Extracts the <code>workflow</code> and
+                        <code>catalog</code> objects from the parsed data.
+                    </li>
+                    <li>
+                        Calls the
+                        <code>compare_workflow_and_catalog</code> function with
+                        the extracted data.
+                    </li>
+                    <li>
+                        Returns a JSON response containing a success message and
+                        the result of the comparison.
+                    </li>
+                </ol>
+            </section>
+            <footer>
+                <p>&copy; 2024 API Documentation</p>
+            </footer>
+        </div>
+    </body>
+</html>

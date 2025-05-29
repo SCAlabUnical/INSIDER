@@ -1,0 +1,550 @@
+{
+	"service": [
+		{
+			"ID": "1",
+			"Service Name": "Amazon API Gateway ",
+			"Service Type": "Communication",
+			"Service Category": "Application Integration",
+			"Description Short": "Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.",
+			"layers": ["cloud"],
+			"Tags": "API Management, Serverless, Security, Integration, RESTful"
+		},
+		{
+			"ID": "2",
+			"Service Name": "Amazon AppStream 2.0",
+			"Service Type": "Computation",
+			"Service Category": "End User Computing",
+			"Description Short": "Amazon AppStream 2.0 is a fully managed AWS End User Computing (EUC) service designed to stream software-as-a-service (SaaS) applications and convert desktop applications to SaaS without rewriting code or refactoring the application.",
+			"layers": ["cloud"],
+			"Tags": "Virtual Applications, Streaming, Managed, Scalability, Desktop"
+		},
+		{
+			"ID": "3",
+			"Service Name": "Amazon Aurora",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "Amazon Aurora is a global-scale relational database service built for the cloud with full MySQL and PostgreSQL compatibility.",
+			"layers": ["cloud"],
+			"Tags": "Relational Database, High Performance, Managed, Scalability, Availability"
+		},
+		{
+			"ID": "4",
+			"Service Name": "Amazon CloudWatch",
+			"Service Type": "Computation",
+			"Service Category": "Management & Governance",
+			"Description Short": "Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers.",
+			"layers": ["on-premise", "far-edge", "cloud"],
+			"Tags": "Monitoring, Observability, DevOps, Metrics, Logs"
+		},
+		{
+			"ID": "5",
+			"Service Name": "Amazon Cognito",
+			"Service Type": "Computation",
+			"Service Category": "Security, Identity, & Compliance",
+			"Description Short": "Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily.",
+			"layers": ["cloud"],
+			"Tags": "Authentication, Authorization, User Management, Security, Identity"
+		},
+		{
+			"ID": "6",
+			"Service Name": "Amazon DocumentDB",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "Amazon DocumentDB (with MongoDB compatibility) is a fast, scalable, highly available, and fully managed document database service that supports MongoDB workloads.",
+			"layers": ["cloud"],
+			"Tags": "Document Database, MongoDB, Managed, Scalability, Availability"
+		},
+		{
+			"ID": "7",
+			"Service Name": "Amazon DynamoDB",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale.",
+			"layers": ["far-edge", "cloud"],
+			"Tags": "NoSQL, Key-Value, Document Database, Managed, Scalability"
+		},
+		{
+			"ID": "8",
+			"Service Name": "Amazon EC2 Auto Scaling",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Amazon EC2 Auto Scaling helps you maintain application availability and allows you to automatically add or remove EC2 instances according to conditions you define.",
+			"layers": ["far-edge", "cloud"],
+			"Tags": "Auto Scaling, EC2, Compute, Availability, Scalability"
+		},
+		{
+			"ID": "9",
+			"Service Name": "Amazon Elastic Block Store",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Amazon Elastic Block Store (EBS) provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud.",
+			"layers": ["on-premise", "far-edge", "cloud"],
+			"Tags": "Block Storage, EC2, Persistent Storage, Managed, Scalability"
+		},
+		{
+			"ID": "10",
+			"Service Name": "Amazon ElastiCache",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "Amazon ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud.",
+			"layers": ["on-premise", "near-edge", "cloud"],
+			"Tags": "In-Memory Cache, Redis, Memcached, Managed, Scalability"
+		},
+		{
+			"ID": "11",
+			"Service Name": "Amazon EMR",
+			"Service Type": "Computation",
+			"Service Category": "Analytics",
+			"Description Short": "Amazon EMR provides a managed Hadoop framework that makes it easy, fast, and cost-effective to process vast amounts of data across dynamically scalable Amazon EC2 instances.",
+			"layers": ["on-premise", "near-edge", "cloud"],
+			"Tags": "Big Data, Hadoop, Spark, Managed, Scalability"
+		},
+		{
+			"ID": "12",
+			"Service Name": "Amazon Forecast",
+			"Service Type": "Computation",
+			"Service Category": "Machine Learning",
+			"Description Short": "Amazon Forecast uses machine learning to generate accurate forecasts, without requiring any prior machine learning experience.",
+			"layers": ["cloud"],
+			"Tags": "Machine Learning, Forecasting, Managed, Scalability, AI"
+		},
+		{
+			"ID": "13",
+			"Service Name": "Amazon Kinesis Data Steam",
+			"Service Type": "Computation",
+			"Service Category": "Analytics",
+			"Description Short": "Amazon Kinesis Data Streams enables you to build custom, real-time applications that process or analyze streaming data for specialized needs.",
+			"layers": ["cloud"],
+			"Tags": "Streaming Data, Real-Time, Analytics, Managed, Scalability"
+		},
+		{
+			"ID": "14",
+			"Service Name": "Amazon Kinesis Video Streams",
+			"Service Type": "Computation",
+			"Service Category": "Analytics",
+			"Description Short": "Amazon Kinesis Video Streams makes it easy to securely stream video from connected devices to AWS for analytics, machine learning (ML), and other processing.",
+			"layers": ["on-device", "cloud"],
+			"Tags": "Video Streaming, Real-Time, Analytics, Machine Learning, Managed"
+		},
+		{
+			"ID": "15",
+			"Service Name": "Amazon Lightsail",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Amazon Lightsail is an easy-to-use virtual private server (VPS) that offers you everything needed to build an application or website, plus a cost-effective, monthly plan.",
+			"layers": ["cloud"],
+			"Tags": "VPS, Compute, Managed, Scalability, Cost-Effective"
+		},
+		{
+			"ID": "16",
+			"Service Name": "Amazon Location Service",
+			"Service Type": "Computation",
+			"Service Category": "Application Integration",
+			"Description Short": "Amazon Location Service makes it easy for developers to add location functionality to their applications without sacrificing data security and user privacy.",
+			"layers": ["cloud"],
+			"Tags": "Location, Maps, Geocoding, Geofencing, Managed"
+		},
+		{
+			"ID": "17",
+			"Service Name": "Amazon MemoryDB",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "Amazon MemoryDB for Redis is a Redis-compatible, in-memory database service that delivers ultra-fast performance and durability.",
+			"layers": ["cloud"],
+			"Tags": "In-Memory Database, Redis, Managed, Scalability, Performance"
+		},
+		{
+			"ID": "18",
+			"Service Name": "Amazon Pinpoint",
+			"Service Type": "Communication",
+			"Service Category": "Customer Engagement",
+			"Description Short": "Amazon Pinpoint helps you engage your customers by sending them targeted messages through multiple channels, including email, SMS, push notifications, and voice messages.",
+			"layers": ["cloud"],
+			"Tags": "Customer Engagement, Messaging, Email, SMS, Push Notifications"
+		},
+		{
+			"ID": "19",
+			"Service Name": "Amazon RDS",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "Amazon Relational Database Service (RDS) makes it easy to set up, operate, and scale a relational database in the cloud.",
+			"layers": ["on-premise", "far-edge", "near-edge", "cloud"],
+			"Tags": "Relational Database, Managed, Scalability, Availability, Performance"
+		},
+		{
+			"ID": "20",
+			"Service Name": "Amazon Route 53",
+			"Service Type": "Communication",
+			"Service Category": "Networking & Content Delivery",
+			"Description Short": "Amazon Route 53 is a scalable and highly available Domain Name System (DNS) web service.",
+			"layers": ["on-premise", "far-edge", "cloud"],
+			"Tags": "DNS, Networking, Scalable, Highly Available, Managed"
+		},
+		{
+			"ID": "21",
+			"Service Name": "Amazon SageMaker",
+			"Service Type": "Computation",
+			"Service Category": "Machine Learning",
+			"Description Short": "Amazon SageMaker is a fully managed service that provides every developer and data scientist with the ability to build, train, and deploy machine learning (ML) models quickly.",
+			"layers": ["far-edge", "cloud"],
+			"Tags": "Machine Learning, AI, Managed, Scalability, Deployment"
+		},
+		{
+			"ID": "22",
+			"Service Name": "Amazon Simple Notification Service",
+			"Service Type": "Communication",
+			"Service Category": "Application Integration",
+			"Description Short": "Amazon Simple Notification Service (SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.",
+			"layers": ["cloud"],
+			"Tags": "Messaging, A2A, A2P, Managed, Scalability"
+		},
+		{
+			"ID": "23",
+			"Service Name": "Amazon Simple Storage Service (Amazon S3)",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.",
+			"layers": ["on-premise", "cloud"],
+			"Tags": "Object Storage, Scalability, Availability, Security, Performance"
+		},
+		{
+			"ID": "24",
+			"Service Name": "Amazon Timestream",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "Amazon Timestream is a fast, scalable, and serverless time series database service for IoT and operational applications that makes it easy to store and analyze trillions of events per day.",
+			"layers": ["cloud"],
+			"Tags": "Time Series Database, IoT, Operational Applications, Managed, Scalability"
+		},
+		{
+			"ID": "25",
+			"Service Name": "Amazon Virtual Private Cloud",
+			"Service Type": "Communication",
+			"Service Category": "Networking & Content Delivery",
+			"Description Short": "Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.",
+			"layers": ["on-premise", "far-edge", "near-edge", "cloud"],
+			"Tags": "VPC, Networking, Isolation, Security, Scalability"
+		},
+		{
+			"ID": "26",
+			"Service Name": "Amazon WorkDocs",
+			"Service Type": "Communication",
+			"Service Category": "End User Computing",
+			"Description Short": "Amazon WorkDocs is a fully managed, secure enterprise document storage and sharing service with strong administrative controls and feedback capabilities.",
+			"layers": ["cloud"],
+			"Tags": "Document Storage, Sharing, Security, Managed, Feedback"
+		},
+		{
+			"ID": "27",
+			"Service Name": "Amazon WorkLink",
+			"Service Type": "Computation",
+			"Service Category": "End User Computing",
+			"Description Short": "Amazon WorkLink is a fully managed service that provides your employees secure, one-click access to your internal corporate websites and web applications using their mobile phones.",
+			"layers": ["cloud"],
+			"Tags": "Secure Access, Mobile, Corporate Websites, Managed, Scalability"
+		},
+		{
+			"ID": "28",
+			"Service Name": "Amazon WorkMail",
+			"Service Type": "Communication",
+			"Service Category": "End User Computing",
+			"Description Short": "Amazon WorkMail is a secure, managed business email and calendar service with support for existing desktop and mobile email clients.",
+			"layers": ["cloud"],
+			"Tags": "Email, Calendar, Secure, Managed, Business"
+		},
+		{
+			"ID": "29",
+			"Service Name": "Amazon WorkSpaces Family",
+			"Service Type": "Computation",
+			"Service Category": "End User Computing",
+			"Description Short": "Amazon WorkSpaces is a fully managed, secure Desktop-as-a-Service (DaaS) solution that runs on AWS.",
+			"layers": ["cloud"],
+			"Tags": "DaaS, Desktop, Secure, Managed, Scalability"
+		},
+		{
+			"ID": "30",
+			"Service Name": "AWS Amplify",
+			"Service Type": "Computation",
+			"Service Category": "Application Integration",
+			"Description Short": "AWS Amplify is a set of tools and services that enables mobile and front-end web developers to build secure, scalable full-stack applications, powered by AWS.",
+			"layers": ["cloud"],
+			"Tags": "Full-Stack, Mobile, Web, Secure, Scalable"
+		},
+		{
+			"ID": "31",
+			"Service Name": "AWS App Runner",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "AWS App Runner is a fully managed service that makes it easy for developers to quickly deploy containerized web applications and APIs, at scale and with no prior infrastructure experience required.",
+			"layers": ["cloud"],
+			"Tags": "Containerized Applications, APIs, Managed, Scalability, Deployment"
+		},
+		{
+			"ID": "32",
+			"Service Name": "AWS CodeBuild",
+			"Service Type": "Computation",
+			"Service Category": "Developer Tools",
+			"Description Short": "AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.",
+			"layers": ["cloud"],
+			"Tags": "Continuous Integration, Build, Managed, Scalability, Developer Tools"
+		},
+		{
+			"ID": "33",
+			"Service Name": "AWS CodeDeploy",
+			"Service Type": "Computation",
+			"Service Category": "Developer Tools",
+			"Description Short": "AWS CodeDeploy is a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your on-premises servers.",
+			"layers": ["cloud"],
+			"Tags": "Deployment, Automation, Managed, Scalability, Developer Tools"
+		},
+		{
+			"ID": "34",
+			"Service Name": "AWS CodePipeline",
+			"Service Type": "Computation",
+			"Service Category": "Developer Tools",
+			"Description Short": "AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates.",
+			"layers": ["cloud"],
+			"Tags": "Continuous Delivery, Automation, Managed, Scalability, Developer Tools"
+		},
+		{
+			"ID": "35",
+			"Service Name": "AWS Compute Optimizer",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "AWS Compute Optimizer recommends optimal AWS resources for your workloads to reduce costs and improve performance by using machine learning to analyze historical utilization metrics.",
+			"layers": ["cloud"],
+			"Tags": "Optimization, Machine Learning, Cost Reduction, Performance, Managed"
+		},
+		{
+			"ID": "36",
+			"Service Name": "AWS Config",
+			"Service Type": "Computation",
+			"Service Category": "Management & Governance",
+			"Description Short": "AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.",
+			"layers": ["cloud"],
+			"Tags": "Configuration, Audit, Evaluation, Managed, Governance"
+		},
+		{
+			"ID": "37",
+			"Service Name": "AWS Data Exchange",
+			"Service Type": "Computation",
+			"Service Category": "Analytics",
+			"Description Short": "AWS Data Exchange makes it easy to find, subscribe to, and use third-party data in the cloud.",
+			"layers": ["cloud"],
+			"Tags": "Data Exchange, Third-Party Data, Managed, Scalability, Analytics"
+		},
+		{
+			"ID": "38",
+			"Service Name": "AWS DataSync",
+			"Service Type": "Communication",
+			"Service Category": "Storage",
+			"Description Short": "AWS DataSync is an online data transfer service that simplifies, automates, and accelerates moving data between on-premises storage and AWS storage services.",
+			"layers": ["cloud"],
+			"Tags": "Data Transfer, Automation, Managed, Scalability, Storage"
+		},
+		{
+			"ID": "39",
+			"Service Name": "AWS Device Farm",
+			"Service Type": "Computation",
+			"Service Category": "Developer Tools",
+			"Description Short": "AWS Device Farm is an app testing service that lets you test and interact with your Android, iOS, and web apps on many devices at once, or reproduce issues on a device in real time.",
+			"layers": ["cloud"],
+			"Tags": "App Testing, Android, iOS, Web, Developer Tools"
+		},
+		{
+			"ID": "40",
+			"Service Name": "AWS Direct Connect",
+			"Service Type": "Communication",
+			"Service Category": "Networking & Content Delivery",
+			"Description Short": "AWS Direct Connect is a cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS.",
+			"layers": ["on-premise", "cloud"],
+			"Tags": "Networking, Dedicated Connection, Managed, Scalability, Cloud"
+		},
+		{
+			"ID": "41",
+			"Service Name": "AWS EC2",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the AWS Cloud.",
+			"layers": ["on-premise", "far-edge", "near-edge", "cloud"],
+			"Tags": "Compute, Scalable, Managed, Cloud, EC2"
+		},
+		{
+			"ID": "42",
+			"Service Name": "AWS Elastic Beanstalk",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.",
+			"layers": ["cloud"],
+			"Tags": "Web Applications, Deployment, Scaling, Managed, Compute"
+		},
+		{
+			"ID": "43",
+			"Service Name": "AWS Glue",
+			"Service Type": "Computation",
+			"Service Category": "Analytics",
+			"Description Short": "AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy to prepare and load your data for analytics.",
+			"layers": ["cloud"],
+			"Tags": "ETL, Data Preparation, Analytics, Managed, Scalability"
+		},
+		{
+			"ID": "44",
+			"Service Name": "AWS Identity and Access Management",
+			"Service Type": "Computation",
+			"Service Category": "Security, Identity, & Compliance",
+			"Description Short": "AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely.",
+			"layers": ["cloud"],
+			"Tags": "Security, Identity, Access Management, Managed, Scalability"
+		},
+		{
+			"ID": "45",
+			"Service Name": "AWS IoT Analytics",
+			"Service Type": "Computation",
+			"Service Category": "Internet of Things",
+			"Description Short": "AWS IoT Analytics is a fully managed service that makes it easy to run and operationalize sophisticated analytics on massive volumes of IoT data without having to worry about the cost and complexity typically required to build an IoT analytics platform.",
+			"layers": ["cloud"],
+			"Tags": "IoT, Analytics, Managed, Scalability, Data"
+		},
+		{
+			"ID": "46",
+			"Service Name": "AWS IoT Device Management",
+			"Service Type": "Computation",
+			"Service Category": "Internet of Things",
+			"Description Short": "AWS IoT Device Management makes it easy to securely onboard, organize, monitor, and remotely manage IoT devices at scale throughout their lifecycle.",
+			"layers": ["cloud"],
+			"Tags": "IoT, Device Management, Security, Managed, Scalability"
+		},
+		{
+			"ID": "47",
+			"Service Name": "AWS IoT SiteWise",
+			"Service Type": "Computation",
+			"Service Category": "Internet of Things",
+			"Description Short": "AWS IoT SiteWise is a managed service that makes it easy to collect, store, organize, and monitor data from industrial equipment at scale.",
+			"layers": ["on-premise", "cloud"],
+			"Tags": "IoT, Industrial Equipment, Data Collection, Managed, Scalability"
+		},
+		{
+			"ID": "48",
+			"Service Name": "AWS Lambda",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume.",
+			"layers": ["on-device", "on-premise", "cloud"],
+			"Tags": "Serverless, Compute, Managed, Scalability, Cost-Effective"
+		},
+		{
+			"ID": "49",
+			"Service Name": "AWS Private 5G",
+			"Service Type": "Communication",
+			"Service Category": "Networking & Content Delivery",
+			"Description Short": "AWS Private 5G is a managed service that makes it easy to deploy, operate, and scale your own private mobile network.",
+			"layers": ["on-device", "cloud"],
+			"Tags": "5G, Private Network, Managed, Scalability, Mobile"
+		},
+		{
+			"ID": "50",
+			"Service Name": "AWS Serverless Application Repository",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "The AWS Serverless Application Repository is a managed repository for serverless applications that makes it easy to discover, deploy, and share serverless applications.",
+			"layers": ["cloud"],
+			"Tags": "Serverless, Applications, Repository, Managed, Scalability"
+		},
+		{
+			"ID": "51",
+			"Service Name": "AWS Systems Manager",
+			"Service Type": "Computation",
+			"Service Category": "Management & Governance",
+			"Description Short": "AWS Systems Manager gives you visibility and control of your infrastructure on AWS.",
+			"layers": ["cloud"],
+			"Tags": "Management, Governance, Visibility, Control, Managed"
+		},
+		{
+			"ID": "52",
+			"Service Name": "AWS Transfer Family",
+			"Service Type": "Communication",
+			"Service Category": "Storage",
+			"Description Short": "AWS Transfer Family provides fully managed support for file transfers directly into and out of Amazon S3 or Amazon EFS.",
+			"layers": ["cloud"],
+			"Tags": "File Transfer, S3, EFS, Managed, Scalability"
+		},
+		{
+			"ID": "53",
+			"Service Name": "AWS Transit Gateway",
+			"Service Type": "Communication",
+			"Service Category": "Networking & Content Delivery",
+			"Description Short": "AWS Transit Gateway connects your Amazon Virtual Private Clouds (VPCs) and on-premises networks through a central hub.",
+			"layers": ["cloud"],
+			"Tags": "Networking, VPC, Central Hub, Managed, Scalability"
+		},
+		{
+			"ID": "54",
+			"Service Name": "Greengrass - Bluetooth IoT Gateway",
+			"Service Type": "Communication",
+			"Service Category": "Internet of Things",
+			"Description Short": "Greengrass - Bluetooth IoT Gateway enables you to connect Bluetooth devices to the AWS Cloud.",
+			"layers": [
+				"on-device",
+				"on-premise",
+				"far-edge",
+				"near-edge",
+				"cloud"
+			],
+			"Tags": "IoT, Bluetooth, Gateway, Managed, Scalability"
+		},
+		{
+			"ID": "55",
+			"Service Name": "Greengrass - InfluxDB",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "Greengrass - InfluxDB is a time series database designed to handle high write and query loads.",
+			"layers": [
+				"on-device",
+				"on-premise",
+				"far-edge",
+				"near-edge",
+				"cloud"
+			],
+			"Tags": "Time Series Database, InfluxDB, Managed, Scalability, Performance"
+		},
+		{
+			"ID": "56",
+			"Service Name": "Greengrass - ML Inference",
+			"Service Type": "Computation",
+			"Service Category": "Machine Learning",
+			"Description Short": "Greengrass - ML Inference enables you to perform machine learning inference locally on your Greengrass devices.",
+			"layers": [
+				"on-device",
+				"on-premise",
+				"far-edge",
+				"near-edge",
+				"cloud"
+			],
+			"Tags": "Machine Learning, Inference, Greengrass, Managed, Scalability"
+		},
+		{
+			"ID": "57",
+			"Service Name": "Greengrass - Postgresql DB",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "Greengrass - Postgresql DB is a relational database that supports both SQL and JSON for extensibility and SQL compliance.",
+			"layers": [
+				"on-device",
+				"on-premise",
+				"far-edge",
+				"near-edge",
+				"cloud"
+			],
+			"Tags": "Relational Database, PostgreSQL, Managed, Scalability, Performance"
+		},
+		{
+			"ID": "58",
+			"Service Name": "Tensorflow on AWS",
+			"Service Type": "Computation",
+			"Service Category": "Machine Learning",
+			"Description Short": "Provides broad support for TensorFlow, helping customers develop and serve their own models across computer vision (CV), natural language processing (NLP), speech translation, and more.",
+			"layers": ["on-premise", "far-edge", "near-edge", "cloud"],
+			"Tags": "Machine Learning, AI, Framework, Development, Deployment"
+		}
+	]
+}

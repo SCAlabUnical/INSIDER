@@ -1,0 +1,133 @@
+# Note: ecc-workflow-designer and ecc-workflow-api-server are now included in the repository
+
+# ---------- Python configuration ---
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments - comprehensive patterns
+/venv/
+/env/
+/.venv/
+/.env/
+/virtualenv/
+/.virtualenv/
+**/venv/
+**/env/
+**/.venv/
+**/.env/
+**/virtualenv/
+**/.virtualenv/
+/ecc-workflow-api-server/venv/
+/ecc-workflow-api-server/env/
+/ecc-workflow-api-server/.venv/
+
+# Log files and directories
+/logs/
+**/logs/
+*.log
+/ecc-workflow-api-server/logs/
+/ecc-workflow-api-server/app/logs/
+
+# SQLite database
+*.sqlite3
+**/db.sqlite3
+/ecc-workflow-api-server/app/db.sqlite3
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+
+# Django
+*.pot
+local_settings.py
+db.sqlite3-journal
+
+# LaTeX build files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.dvi
+*.xdv
+*-converted-to.*
+*.pdf
+*.ps
+*.eps
+*.tex~
+*.bak
+*.backup
+*.sty~
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnp/
+.pnp.js
+coverage/
+.next/
+out/
+.nuxt/
+.cache/
+dist/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+*-backup/

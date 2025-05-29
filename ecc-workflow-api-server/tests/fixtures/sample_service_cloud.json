@@ -1,0 +1,26 @@
+{
+	"name": "Device Data Storage",
+	"type": "Storage",
+	"id": 24,
+	"description": "Stores the drone mission data, including video feeds, drone locations, and meteorological information",
+	"quantity": 1,
+	"parameters": {
+		"execution_time": "high",
+		"power_consumption": "high",
+		"network_bandwidth": "very high"
+	},
+	"x": 1288.1719360351562,
+	"y": 463.440860748291,
+	"inputConnectors": [
+		{ "name": "", "direction": "x" },
+		{ "name": "", "direction": "y" }
+	],
+	"outputConnectors": [
+		{ "name": "", "direction": "x" },
+		{ "name": "", "direction": "y" }
+	],
+	"width": 250,
+	"height": 90,
+	"tags": ["Time Series Database", "IoT", "Managed", "Scalability"],
+	"image": "http://127.0.0.1:5501/assets/images/database.svg"
+}

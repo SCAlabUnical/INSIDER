@@ -1,0 +1,27 @@
+{
+	"on-device": {
+		"execution_time": "very low",
+		"power_consumption": "low",
+		"network_bandwidth": "very low"
+	},
+	"on-premise": {
+		"execution_time": "low",
+		"power_consumption": "moderate",
+		"network_bandwidth": "moderate"
+	},
+	"far-edge": {
+		"execution_time": "moderate",
+		"power_consumption": "moderate",
+		"network_bandwidth": "moderate"
+	},
+	"near-edge": {
+		"execution_time": "moderate",
+		"power_consumption": "moderate",
+		"network_bandwidth": "high"
+	},
+	"cloud": {
+		"execution_time": "high",
+		"power_consumption": "high",
+		"network_bandwidth": "very high"
+	}
+}

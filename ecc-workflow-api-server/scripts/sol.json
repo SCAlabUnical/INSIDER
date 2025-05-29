@@ -1,0 +1,91 @@
+{
+    "message": "Advising solution",
+    "request_body": {
+        "result": [
+            {
+                "abstractservice_id": 0,
+                "abstractservice_name": "Web Interface",
+                "abstractservice_layer": "far-edge",
+                "best_service": "Amazon API Gateway"
+            },
+            {
+                "abstractservice_id": 1,
+                "abstractservice_name": "Publish-Subscribe Broker",
+                "abstractservice_layer": "far-edge",
+                "best_service": "Amazon Simple Notification Service"
+            },
+            {
+                "abstractservice_id": 2,
+                "abstractservice_name": "Public Event Collector",
+                "abstractservice_layer": "cloud",
+                "best_service": "Amazon CloudWatch"
+            },
+            {
+                "abstractservice_id": 5,
+                "abstractservice_name": "Real-Time Traffic Monitoring (Web)",
+                "abstractservice_layer": "cloud",
+                "best_service": "Amazon CloudWatch"
+            },
+            {
+                "abstractservice_id": 6,
+                "abstractservice_name": "Cyber-Physical Interface",
+                "abstractservice_layer": "far-edge",
+                "best_service": "Greengrass - Bluetooth IoT Gateway"
+            },
+            {
+                "abstractservice_id": 7,
+                "abstractservice_name": "Streaming Protocol",
+                "abstractservice_layer": "far-edge",
+                "best_service": "Greengrass - Stream Manager"
+            },
+            {
+                "abstractservice_id": 8,
+                "abstractservice_name": "Real-Time Traffic Monitoring (Devices)",
+                "abstractservice_layer": "far-edge",
+                "best_service": "Amazon CloudWatch"
+            },
+            {
+                "abstractservice_id": 9,
+                "abstractservice_name": "Cyber-Physical Interface",
+                "abstractservice_layer": "far-edge",
+                "best_service": "Greengrass - Bluetooth IoT Gateway"
+            },
+            {
+                "abstractservice_id": 11,
+                "abstractservice_name": "Taxi Monitoring",
+                "abstractservice_layer": "far-edge",
+                "best_service": "Amazon CloudWatch"
+            },
+            {
+                "abstractservice_id": 12,
+                "abstractservice_name": "Cyber-Physical Interface",
+                "abstractservice_layer": "far-edge",
+                "best_service": "Amazon Simple Notification Service"
+            },
+            {
+                "abstractservice_id": 14,
+                "abstractservice_name": "Passenger Monitoring",
+                "abstractservice_layer": "far-edge",
+                "best_service": "Amazon CloudWatch"
+            },
+            {
+                "abstractservice_id": 15,
+                "abstractservice_name": "Web Data Storage",
+                "abstractservice_layer": "cloud",
+                "best_service": "Amazon Simple Storage Service (Amazon S3)"
+            },
+            {
+                "abstractservice_id": 16,
+                "abstractservice_name": "Device Data Storage",
+                "abstractservice_layer": "cloud",
+                "best_service": "Amazon Timestream"
+            },
+            {
+                "abstractservice_id": 17,
+                "abstractservice_name": "ML Train",
+                "abstractservice_layer": "cloud",
+                "best_service": "Amazon SageMaker"
+            }
+        ]
+    }
+}

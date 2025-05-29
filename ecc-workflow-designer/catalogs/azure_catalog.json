@@ -1,0 +1,400 @@
+{
+	"service": [
+		{
+			"ID": "1",
+			"Service Name": "Azure Active Directory B2C",
+			"Service Type": "Communication",
+			"Service Category": "Monitoring and Security",
+			"Description Short": "Customer identity and access management",
+			"layers": ["cloud"],
+			"Tags": ["Authentication", "Identity", "Access Management"]
+		},
+		{
+			"ID": "2",
+			"Service Name": "Azure AD Application Proxy",
+			"Service Type": "Communication",
+			"Service Category": "Monitoring and Security",
+			"Description Short": "Secure access to internal applications",
+			"layers": ["cloud"],
+			"Tags": ["Security", "Access Management", "Corporate Websites"]
+		},
+		{
+			"ID": "3",
+			"Service Name": "Azure Advisor",
+			"Service Type": "Communication",
+			"Service Category": "Compute",
+			"Description Short": "Resource optimization recommendations",
+			"layers": ["cloud"],
+			"Tags": ["Optimization", "Cost Reduction", "Management"]
+		},
+		{
+			"ID": "4",
+			"Service Name": "Azure API Management",
+			"Service Type": "Computation",
+			"Service Category": "Development",
+			"Description Short": "API creation, publishing, and management platform",
+			"layers": ["cloud"],
+			"Tags": ["API Management", "Integration", "RESTful"]
+		},
+		{
+			"ID": "5",
+			"Service Name": "Azure App Service",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Simplified virtual private server hosting",
+			"layers": ["on-premise", "cloud"],
+			"Tags": ["Web", "Applications", "VPS"]
+		},
+		{
+			"ID": "6",
+			"Service Name": "Azure Automation",
+			"Service Type": "Computation",
+			"Service Category": "Management",
+			"Description Short": "IT operations management",
+			"layers": ["cloud"],
+			"Tags": ["Automation", "Management", "Control"]
+		},
+		{
+			"ID": "7",
+			"Service Name": "Azure Blob Storage",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Object storage service",
+			"layers": ["cloud"],
+			"Tags": ["Object Storage", "Storage", "Scalability"]
+		},
+		{
+			"ID": "8",
+			"Service Name": "Azure Cache for Redis",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "In-memory caching service",
+			"layers": ["cloud"],
+			"Tags": ["In-Memory Cache", "Redis", "Performance"]
+		},
+		{
+			"ID": "9",
+			"Service Name": "Azure Cache for Redis Enterprise",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "In-memory database service",
+			"layers": ["cloud"],
+			"Tags": ["In-Memory Database", "Redis", "Performance"]
+		},
+		{
+			"ID": "10",
+			"Service Name": "Azure Communication Services",
+			"Service Type": "Communication",
+			"Service Category": "Network",
+			"Description Short": "Customer engagement and communications platform",
+			"layers": ["cloud"],
+			"Tags": ["Messaging", "SMS", "Push Notifications"]
+		},
+		{
+			"ID": "11",
+			"Service Name": "Azure Container Apps",
+			"Service Type": "Computation",
+			"Service Category": "Containers",
+			"Description Short": "Fully managed container application service",
+			"layers": ["cloud"],
+			"Tags": ["Containerized Applications", "Serverless", "Deployment"]
+		},
+		{
+			"ID": "12",
+			"Service Name": "Azure Cosmos DB",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "Managed NoSQL document database",
+			"layers": ["cloud"],
+			"Tags": ["NoSQL", "Document Database", "Scalability"]
+		},
+		{
+			"ID": "13",
+			"Service Name": "Azure Data Factory",
+			"Service Type": "Computation",
+			"Service Category": "Data Integration",
+			"Description Short": "Managed ETL (Extract, Transform, Load) service",
+			"layers": ["cloud"],
+			"Tags": ["ETL", "Data Preparation", "Analytics"]
+		},
+		{
+			"ID": "14",
+			"Service Name": "Azure Data Share",
+			"Service Type": "Storage",
+			"Service Category": "Data Exchange",
+			"Description Short": "Service for sharing data between organizations",
+			"layers": ["cloud"],
+			"Tags": ["Data Exchange", "Sharing", "Integration"]
+		},
+		{
+			"ID": "15",
+			"Service Name": "Azure Database for MySQL/PostgreSQL",
+			"Service Type": "Storage",
+			"Service Category": "Database",
+			"Description Short": "High-performance managed relational database",
+			"layers": ["cloud"],
+			"Tags": ["Relational Database", "PostgreSQL", "Performance"]
+		},
+		{
+			"ID": "16",
+			"Service Name": "Azure DevOps Pipelines",
+			"Service Type": "Computation",
+			"Service Category": "Development",
+			"Description Short": "Continuous integration service",
+			"layers": ["cloud"],
+			"Tags": ["Continuous Integration", "Deployment", "Developer Tools"]
+		},
+		{
+			"ID": "17",
+			"Service Name": "Azure DevTest Labs",
+			"Service Type": "Computation",
+			"Service Category": "Development",
+			"Description Short": "Mobile app testing service",
+			"layers": ["cloud"],
+			"Tags": ["App Testing", "Development", "Mobile"]
+		},
+		{
+			"ID": "18",
+			"Service Name": "Azure DNS",
+			"Service Type": "Communication",
+			"Service Category": "Network",
+			"Description Short": "Domain name system service",
+			"layers": ["cloud"],
+			"Tags": ["DNS", "Networking", "Highly Available"]
+		},
+		{
+			"ID": "19",
+			"Service Name": "Azure Event Hubs",
+			"Service Type": "Communication",
+			"Service Category": "Analytics",
+			"Description Short": "Real-time data streaming service",
+			"layers": ["cloud"],
+			"Tags": ["Streaming Data", "Real-Time", "Analytics"]
+		},
+		{
+			"ID": "20",
+			"Service Name": "Azure ExpressRoute",
+			"Service Type": "Communication",
+			"Service Category": "Network",
+			"Description Short": "Dedicated network connection service",
+			"layers": ["cloud"],
+			"Tags": ["Networking", "Dedicated Connection", "Private Network"]
+		},
+		{
+			"ID": "21",
+			"Service Name": "Azure File Sync",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Data transfer and synchronization service",
+			"layers": ["cloud"],
+			"Tags": ["Storage", "Data Transfer", "File Transfer"]
+		},
+		{
+			"ID": "22",
+			"Service Name": "Azure Files",
+			"Service Type": "Storage",
+			"Service Category": "Network",
+			"Description Short": "Managed file transfer service",
+			"layers": ["cloud"],
+			"Tags": ["File Transfer", "Storage", "Sharing"]
+		},
+		{
+			"ID": "23",
+			"Service Name": "Azure Functions",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Serverless compute service",
+			"layers": ["cloud"],
+			"Tags": ["Serverless", "Compute", "Cost-Effective"]
+		},
+		{
+			"ID": "24",
+			"Service Name": "Azure HDInsight",
+			"Service Type": "Computation",
+			"Service Category": "Analytics",
+			"Description Short": "Managed Hadoop/Spark cluster service for big data processing",
+			"layers": ["cloud"],
+			"Tags": ["Big Data", "Hadoop", "Spark"]
+		},
+		{
+			"ID": "25",
+			"Service Name": "Azure IoT Central",
+			"Service Type": "Computation",
+			"Service Category": "IoT",
+			"Description Short": "Industrial IoT service",
+			"layers": ["cloud"],
+			"Tags": ["IoT", "Industrial Equipment", "Device Management"]
+		},
+		{
+			"ID": "26",
+			"Service Name": "Azure IoT Edge",
+			"Service Type": "Computation",
+			"Service Category": "IoT",
+			"Description Short": "Edge computing platform for IoT",
+			"layers": ["on-device", "on-premise", "cloud"],
+			"Tags": ["IoT", "Device Management", "Gateway"]
+		},
+		{
+			"ID": "27",
+			"Service Name": "Azure IoT Hub",
+			"Service Type": "Computation",
+			"Service Category": "IoT",
+			"Description Short": "IoT data analytics service",
+			"layers": ["on-device", "cloud"],
+			"Tags": ["IoT", "Device Management", "Data Collection"]
+		},
+		{
+			"ID": "28",
+			"Service Name": "Azure Kubernetes Service (AKS)",
+			"Service Type": "Computation",
+			"Service Category": "Containers",
+			"Description Short": "Managed Kubernetes service for containerized apps",
+			"layers": ["on-premise", "far-edge", "cloud"],
+			"Tags": ["Containerized Applications", "Deployment", "Automation"]
+		},
+		{
+			"ID": "29",
+			"Service Name": "Azure Load Balancer",
+			"Service Type": "Computation",
+			"Service Category": "Network",
+			"Description Short": "Distributes network traffic across multiple servers",
+			"layers": ["far-edge", "cloud"],
+			"Tags": ["Networking", "Scalability", "Availability"]
+		},
+		{
+			"ID": "30",
+			"Service Name": "Azure Machine Learning",
+			"Service Type": "Computation",
+			"Service Category": "AI",
+			"Description Short": "Time-series forecasting service",
+			"layers": ["on-premise", "cloud"],
+			"Tags": ["AI", "ML", "Forecasting"]
+		},
+		{
+			"ID": "31",
+			"Service Name": "Azure Managed Disks",
+			"Service Type": "Storage",
+			"Service Category": "Storage",
+			"Description Short": "Block storage service",
+			"layers": ["cloud"],
+			"Tags": ["Block Storage", "Persistent Storage", "Storage"]
+		},
+		{
+			"ID": "32",
+			"Service Name": "Azure Maps",
+			"Service Type": "Computation",
+			"Service Category": "Location Services",
+			"Description Short": "Location-based services and APIs",
+			"layers": ["cloud"],
+			"Tags": ["Location", "Maps", "Geocoding"]
+		},
+		{
+			"ID": "33",
+			"Service Name": "Azure Media Services",
+			"Service Type": "Computation",
+			"Service Category": "Media",
+			"Description Short": "Video stream processing and management",
+			"layers": ["cloud"],
+			"Tags": ["Video Streaming", "Streaming", "Media"]
+		},
+		{
+			"ID": "34",
+			"Service Name": "Azure Mobile Apps",
+			"Service Type": "Computation",
+			"Service Category": "Development",
+			"Description Short": "Mobile and web application development platform",
+			"layers": ["cloud"],
+			"Tags": ["Mobile", "Web", "Applications"]
+		},
+		{
+			"ID": "35",
+			"Service Name": "Azure Monitor",
+			"Service Type": "Computation",
+			"Service Category": "Monitoring and Security",
+			"Description Short": "Infrastructure monitoring and management",
+			"layers": ["cloud"],
+			"Tags": ["Monitoring", "Metrics", "Logs"]
+		},
+		{
+			"ID": "36",
+			"Service Name": "Azure Policy",
+			"Service Type": "Computation",
+			"Service Category": "Monitoring and Security",
+			"Description Short": "Resource configuration and compliance",
+			"layers": ["cloud"],
+			"Tags": ["Governance", "Configuration", "Security"]
+		},
+		{
+			"ID": "37",
+			"Service Name": "Azure Private Link",
+			"Service Type": "Communication",
+			"Service Category": "Network",
+			"Description Short": "Securely connect to services via private endpoints",
+			"layers": ["far-edge", "cloud"],
+			"Tags": ["Networking", "Security", "Private Network"]
+		},
+		{
+			"ID": "38",
+			"Service Name": "Azure Service Bus",
+			"Service Type": "Communication",
+			"Service Category": "Network",
+			"Description Short": "Pub/sub messaging and notification service",
+			"layers": ["cloud"],
+			"Tags": ["Messaging", "A2A", "A2P"]
+		},
+		{
+			"ID": "39",
+			"Service Name": "Azure Time Series Insights",
+			"Service Type": "Computation",
+			"Service Category": "Storage",
+			"Description Short": "Time series database service",
+			"layers": ["cloud"],
+			"Tags": ["Time Series Database", "IoT", "Analytics"]
+		},
+		{
+			"ID": "40",
+			"Service Name": "Azure Virtual Machine Scale Sets",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Automatic scaling of compute resources",
+			"layers": ["cloud"],
+			"Tags": ["Compute", "Scalability", "Automation"]
+		},
+		{
+			"ID": "41",
+			"Service Name": "Azure Virtual Machines",
+			"Service Type": "Computation",
+			"Service Category": "Compute",
+			"Description Short": "Infrastructure as a Service (IaaS) compute",
+			"layers": ["far-edge", "cloud"],
+			"Tags": ["Compute", "Server", "Scalability"]
+		},
+		{
+			"ID": "42",
+			"Service Name": "Azure Virtual Network",
+			"Service Type": "Communication",
+			"Service Category": "Network",
+			"Description Short": "Isolated cloud network service",
+			"layers": ["far-edge", "cloud"],
+			"Tags": ["Networking", "VPC", "Isolation"]
+		},
+		{
+			"ID": "43",
+			"Service Name": "Azure Virtual WAN",
+			"Service Type": "Communication",
+			"Service Category": "Network",
+			"Description Short": "Network transit hub service",
+			"layers": ["cloud"],
+			"Tags": ["Networking", "Central Hub", "Security"]
+		},
+		{
+			"ID": "44",
+			"Service Name": "Microsoft Exchange Online",
+			"Service Type": "Computation",
+			"Service Category": "Network",
+			"Description Short": "Enterprise email and calendar service",
+			"layers": ["cloud"],
+			"Tags": ["Email", "Calendar", "Business"]
+		}
+	]
+}

@@ -1,0 +1,26 @@
+@startuml
+package api.solving_strategy {
+    abstract SolvingStrategy {
+        +solve(workflow: dict, catalog: dict) : dict
+    }
+
+    class LLMStrategy implements SolvingStrategy {
+        +solve(workflow: dict, catalog: dict, model: int) : dict
+    }
+
+    class LinearStrategy implements SolvingStrategy {
+        +solve(workflow: dict, catalog: dict) : dict
+    }
+
+    class linearsolver.solver {
+        +solve(workflow: dict, catalog: dict) : dict
+    }
+
+    class gptsolver.solver {
+        +solve(workflow: dict, catalog: dict, model_choice: int) : dict
+    }
+
+    LLMStrategy --> gptsolver.solver
+    LinearStrategy --> linearsolver.solver
+}
+@enduml

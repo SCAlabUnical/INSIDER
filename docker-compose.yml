@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+    frontend:
+        build:
+            context: ./ecc-workflow-designer
+            dockerfile: Dockerfile.dev
+        ports:
+            - "3000:80"
+        networks:
+            - ecc-workflow-network
+        volumes:
+            - ./ecc-workflow-designer:/usr/share/nginx/html
+            - ./ecc-workflow-designer/nginx.conf:/etc/nginx/conf.d/default.conf
+        depends_on:
+            - backend
+        environment:
+            - API_URL=http://localhost:8000/api
+
+    backend:
+        build:
+            context: ./ecc-workflow-api-server
+            dockerfile: Dockerfile.dev
+        command: python /app/app/manage.py runserver 0.0.0.0:8000
+        volumes:
+            - ./ecc-workflow-api-server:/app
+            - static_volume:/app/static
+        ports:
+            - "8000:8000"
+        networks:
+            ecc-workflow-network:
+                aliases:
+                    - eccd-server
+        environment:
+            - DEBUG=1
+            - DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1] eccd-server web 0.0.0.0
+
+volumes:
+    static_volume:
+
+networks:
+    ecc-workflow-network:

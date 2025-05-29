@@ -1,0 +1,26 @@
+{
+	"name": "Traffic Monitor",
+	"type": "Device",
+	"id": 4,
+	"description": "",
+	"quantity": 1,
+	"parameters": {
+		"execution_time": "very low",
+		"power_consumption": "low",
+		"network_bandwidth": "very low"
+	},
+	"x": 59,
+	"y": 91,
+	"inputConnectors": [
+		{ "name": "", "direction": "x" },
+		{ "name": "", "direction": "y" }
+	],
+	"outputConnectors": [
+		{ "name": "", "direction": "x" },
+		{ "name": "", "direction": "y" }
+	],
+	"width": 250,
+	"height": 90,
+	"image": "http://127.0.0.1:5501/assets/images/camera.svg",
+	"tags": []
+}

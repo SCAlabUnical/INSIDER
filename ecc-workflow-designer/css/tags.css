@@ -1,0 +1,40 @@
+.custom-badge {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.2em 0.6em;
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: #fff;
+	/* Blue gradient for strong contrast */
+	background: linear-gradient(135deg, #0d6efd 0%, #0056b3 100%);
+	border-radius: 0.5rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	margin: 0.2em;
+	transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+/* Modified hover with dark yellow */
+.custom-badge:hover,
+.custom-badge.highlighted {
+	transform: translateY(-2px);
+	/* Dark yellow gradient on hover for high contrast */
+	background: linear-gradient(135deg, #f0c000 0%, #c09000 100%);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	color: #000; /* Change text to black for better readability on yellow */
+}
+
+.custom-badge .remove-tag {
+	background: transparent;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+	line-height: 1;
+	margin-left: 0.3em;
+	cursor: pointer;
+	transition: color 0.2s;
+}
+
+.custom-badge .remove-tag:hover {
+	/* Change hover color to black */
+	color: #000;
+}

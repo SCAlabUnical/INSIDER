@@ -1,0 +1,7 @@
+django-cors-headers==4.4.0
+django-rest-framework==0.1.0
+icecream==2.1.4
+openai==1.67.0
+pip-chill==1.0.3
+pipreqs==0.5.0
+tinycss2==1.2.1

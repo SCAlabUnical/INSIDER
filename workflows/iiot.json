@@ -6,7 +6,11 @@
 			"id": 4,
 			"description": "",
 			"quantity": 1,
-			"parameters": {},
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "very low",
+				"network_bandwidth": "very low"
+			},
 			"x": 53,
 			"y": 72,
 			"inputConnectors": [
@@ -28,7 +32,11 @@
 			"id": 5,
 			"description": "",
 			"quantity": 1,
-			"parameters": {},
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "very low",
+				"network_bandwidth": "very low"
+			},
 			"x": 56.17240905761719,
 			"y": 178.93101501464844,
 			"inputConnectors": [
@@ -50,7 +58,11 @@
 			"id": 6,
 			"description": "",
 			"quantity": 1,
-			"parameters": {},
+			"parameters": {
+				"execution_time": "very low",
+				"power_consumption": "very low",
+				"network_bandwidth": "very low"
+			},
 			"x": 49,
 			"y": 359.4482727050781,
 			"inputConnectors": [
@@ -72,7 +84,11 @@
 			"id": 8,
 			"description": "Enables asynchronous message exchange among tasks",
 			"quantity": 1,
-			"parameters": {},
+			"parameters": {
+				"execution_time": "low",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
 			"x": 649.7053833007812,
 			"y": 123.03883361816406,
 			"inputConnectors": [
@@ -93,7 +109,11 @@
 			"id": 7,
 			"description": "Bridges data between physical devices and digital components",
 			"quantity": 1,
-			"parameters": {},
+			"parameters": {
+				"execution_time": "low",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
 			"x": 359.3793029785156,
 			"y": 121.96551513671875,
 			"inputConnectors": [
@@ -114,7 +134,11 @@
 			"id": 9,
 			"description": "Bridges data between physical devices and digital components",
 			"quantity": 1,
-			"parameters": [],
+			"parameters": {
+				"execution_time": "low",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
 			"x": 360.7980194091797,
 			"y": 356.7672424316406,
 			"inputConnectors": [
@@ -313,9 +337,11 @@
 			"id": 18,
 			"description": "",
 			"quantity": 1,
-			"parameters": [
-				{ "name": "Execution Time", "type": "<=", "value": "100" }
-			],
+			"parameters": {
+				"execution_time": "low",
+				"power_consumption": "moderate",
+				"network_bandwidth": "moderate"
+			},
 			"x": 1581.6236572265625,
 			"y": 186.9489288330078,
 			"inputConnectors": [
@@ -328,7 +354,7 @@
 			],
 			"width": 250,
 			"height": 90,
-			"tags": []
+			"tags": ["Compute ×\n\t\t\t\t\t\t\t\t\t×"]
 		},
 		{
 			"name": "ML Storage",

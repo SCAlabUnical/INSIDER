@@ -57,3 +57,9 @@ The rest of the dependencies will be installed automatically when running the `d
 
 
 You can find the complete documentation [here](https://github.com/SCAlabUnical/INSIDER/wiki).
+
+## References
+- L. Belcastro, F. Marozzo, A. Presta, R. Varchera, A. Vinci, "Developing Platform-Agnostic IIoT Applications in Edge-Cloud Environments". 7 International Conference on Industry 4.0 & Smart Manufacturing 2024 (ISM 2024), vol. 253, pp. 2106-2115, 2025.
+- L. Belcastro, C. Cosentino, F. Marozzo, A. Presta, P. Trunfio, "Empowering Efficient Drone Monitoring with Low-Latency EdgeCloud Continuum Platforms". 33rd Euromicro International Conference on Parallel, Distributed, and Network-Based Processing (PDP 2025), 2025.
+- F. Marozzo, A. Presta, R. Varchera, A. Vinci, "Estimating performances of Application Deployment on Distributed IoT-EdgeCloud Infrastructures". 22nd IEEE International Conference on Pervasive Intelligence and Computing (PICom 2024), pp. 156-161, 2024.
+- L. Belcastro, F. Marozzo, A. Orsino, A. Presta, A. Vinci, "Developing Cross-Platform and Fast-Responsive Applications on the Edge-Cloud Continuum". 15th IFIP Wireless and Mobile Networking Conference (WMNC 2024), pp. 589-594, 2024

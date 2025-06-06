@@ -64,15 +64,16 @@
             <g ng-repeat="node in staticChart.nodes"
                ng-attr-transform="translate({{node.x()}}, {{node.y()}})">
                 <rect
-                    ry="10" rx="10" x="0" y="0"
-                    ng-attr-width="{{node.width()}}"
-                    ng-attr-height="{{node.height()}}"
+                    ng-attr-width="{{node.width() + 5}}"
+                    ng-attr-height="{{node.height() + 5}}"
                     ng-attr-fill="url(#nodeBackgroundGradient{{node.type()}})"
-                    style="stroke: #1976d2; stroke-width: 2;"
-                ></rect>
-                <text ng-attr-x="{{node.width()/2}}" y="20" text-anchor="middle" alignment-baseline="middle" style="font-size: 16px; font-weight: bold;">{{node.name()}}</text>
-                <text ng-attr-x="{{node.width()/2}}" y="40" text-anchor="middle" alignment-baseline="middle" style="font-size: 16px; font-weight: bold;">({{node.best_service()}})</text>
-                <text ng-if="node.quantity > 1" ng-attr-x="{{node.width() - 20}}" ng-attr-y="{{node.height() - 20}}" text-anchor="middle" alignment-baseline="middle" style="font-size: 12px;">{{node.quantity}}</text>            <image height="50" width="50" ng-attr-y="{{node.height()/2 - 20}}" ng-attr-x="{{node.width()/2 - 25}}" ng-attr-href="{{node.image}}" />
+                    style="stroke: black; stroke-width: 1px;"
+                    rx="10" ry="10">
+                </rect>
+                <text ng-attr-x="{{node.width()/2}}" y="15" text-anchor="middle" alignment-baseline="middle" style="font-size: 16px; font-weight: bold;">{{node.name()}}</text>
+                <text ng-attr-x="{{node.width()/2}}" y="80" text-anchor="middle" alignment-baseline="middle" style="font-size: 16px; font-style: italic;">{{node.best_service()}}</text>
+                <text ng-if="node.quantity > 1" ng-attr-x="{{node.width() - 20}}" ng-attr-y="{{node.height() - 20}}" text-anchor="middle" alignment-baseline="middle" style="font-size: 12px;">{{node.quantity}}</text>
+                <image class="border border-dark" height="60" width="60" ng-attr-y="{{node.height()/2 - 30}}" ng-attr-x="{{node.width()/2 - 30}}" ng-attr-href="{{node.icon()}}" />
         </g>
     </svg>
     </div>

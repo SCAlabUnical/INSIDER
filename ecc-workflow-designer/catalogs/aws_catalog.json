@@ -2,7 +2,7 @@
 	"service": [
 		{
 			"ID": "1",
-			"Service Name": "Amazon API Gateway ",
+			"Service Name": "Amazon API Gateway",
 			"Service Type": "Communication",
 			"Service Category": "Application Integration",
 			"Description Short": "Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.",

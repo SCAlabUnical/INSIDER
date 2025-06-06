@@ -4,7 +4,6 @@ services:
             context: ./ecc-workflow-designer
             dockerfile: Dockerfile.dev
         environment:
-            - GPT_KEY=${GPT_KEY}
             - API_URL=http://localhost:8000/api
         ports:
             - "3000:80"
@@ -31,6 +30,7 @@ services:
                 aliases:
                     - eccd-server
         environment:
+            - GPT_KEY=${GPT_KEY}
             - DEBUG=1
             - DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1] eccd-server web 0.0.0.0
 

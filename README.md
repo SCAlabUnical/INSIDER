@@ -27,13 +27,13 @@ The rest of the dependencies will be installed automatically when running the `d
 
 2. **Add the OpenAI API key**:
 
-    Inside the `INSIDER/ecc-workflow-api-server/Dockerfile.dev` file substitute this
+    Inside the `INSIDER/` folder create a file named `.env` and add the following line:
 
     ```bash
-    ENV GPT_KEY <OpenAI_API_KEY>
+    GPT_KEY=<OpenAI_API_KEY>
     ```
 
-    with your own OPENAI API key
+    where `<OpenAI_API_KEY>` is your OpenAI API key. You can obtain an API key by signing up at [OpenAI](https://platform.openai.com/signup).
 
 3. **Build the Docker images**:
 

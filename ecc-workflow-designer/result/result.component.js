@@ -171,6 +171,68 @@ angular.module('app')
                     "Workspace": "../assets/deploy-icons/gcp/gcp-default-icon.svg"
                 };
 
+                $scope.awsDeploymentIcons = {
+                    "Amazon API Gateway": "../assets/deploy-icons/aws/Arch_Amazon-API-Gateway_64.png",
+                    "Amazon AppStream 2.0": "../assets/deploy-icons/aws/Arch_Amazon-AppStream_64.png",
+                    "Amazon Aurora": "../assets/deploy-icons/aws/Arch_Amazon-Aurora_64.png",
+                    "Amazon CloudWatch": "../assets/deploy-icons/aws/Arch_Amazon-CloudWatch_64.png",
+                    "Amazon Cognito": "../assets/deploy-icons/aws/Arch_Amazon-Cognito_64.png",
+                    "Amazon DocumentDB": "../assets/deploy-icons/aws/Arch_Amazon-DocumentDB_64.png",
+                    "Amazon DynamoDB": "../assets/deploy-icons/aws/Arch_Amazon-DynamoDB_64.png",
+                    "Amazon EC2 Auto Scaling": "../assets/deploy-icons/aws/Arch_Amazon-EC2-Auto-Scaling_64.png",
+                    "Amazon Elastic Block Store": "../assets/deploy-icons/aws/Arch_Amazon-Elastic-Block-Store_64.png",
+                    "Amazon ElastiCache": "../assets/deploy-icons/aws/Arch_Amazon-ElastiCache_64.png",
+                    "Amazon EMR": "../assets/deploy-icons/aws/Arch_Amazon-EMR_64.png",
+                    "Amazon Forecast": "../assets/deploy-icons/aws/Arch_Amazon-Forecast_64.png",
+                    "Amazon Kinesis Data Steam": "../assets/deploy-icons/aws/Arch_Amazon-Kinesis-Data-Streams_64.png",
+                    "Amazon Kinesis Video Streams": "../assets/deploy-icons/aws/Arch_Amazon-Kinesis-Video-Streams_64.png",
+                    "Amazon Lightsail": "../assets/deploy-icons/aws/Arch_Amazon-Lightsail_64.png",
+                    "Amazon Location Service": "../assets/deploy-icons/aws/Arch_Amazon-Location-Service_64.png",
+                    "Amazon MemoryDB": "../assets/deploy-icons/aws/Arch_Amazon-MemoryDB-for-Redis_64.png",
+                    "Amazon Pinpoint": "../assets/deploy-icons/aws/Arch_Amazon-Pinpoint_64.png",
+                    "Amazon RDS": "../assets/deploy-icons/aws/Arch_Amazon-RDS_64.png",
+                    "Amazon Route 53": "../assets/deploy-icons/aws/Arch_Amazon-Route-53_64.png",
+                    "Amazon SageMaker": "../assets/deploy-icons/aws/Arch_Amazon-SageMaker_64.png",
+                    "Amazon Simple Notification Service": "../assets/deploy-icons/aws/Arch_Amazon-Simple-Notification-Service_64.png",
+                    "Amazon Simple Storage Service (Amazon S3)": "../assets/deploy-icons/aws/Arch_Amazon-Simple-Storage-Service_64.png",
+                    "Amazon Timestream": "../assets/deploy-icons/aws/Arch_Amazon-Timestream_64.png",
+                    "Amazon Virtual Private Cloud": "../assets/deploy-icons/aws/Arch_Amazon-Virtual-Private-Cloud_64.png",
+                    "Amazon WorkDocs": "../assets/deploy-icons/aws/Arch_Amazon-WorkDocs_64.png",
+                    "Amazon WorkLink": "../assets/deploy-icons/aws/Arch_Amazon-WorkLink_64.png",
+                    "Amazon WorkMail": "../assets/deploy-icons/aws/Arch_Amazon-WorkMail_64.png",
+                    "Amazon WorkSpaces Family": "../assets/deploy-icons/aws/Arch_Amazon-WorkSpaces_64.png",
+                    "AWS Amplify": "../assets/deploy-icons/aws/Arch_AWS-Amplify_64.png",
+                    "AWS App Runner": "../assets/deploy-icons/aws/Arch_AWS-App-Runner_64.png",
+                    "AWS CodeBuild": "../assets/deploy-icons/aws/Arch_AWS-CodeBuild_64.png",
+                    "AWS CodeDeploy": "../assets/deploy-icons/aws/Arch_AWS-CodeDeploy_64.png",
+                    "AWS CodePipeline": "../assets/deploy-icons/aws/Arch_AWS-CodePipeline_64.png",
+                    "AWS Compute Optimizer": "../assets/deploy-icons/aws/Arch_AWS-Compute-Optimizer_64.png",
+                    "AWS Config": "../assets/deploy-icons/aws/Arch_AWS-Config_64.png",
+                    "AWS Data Exchange": "../assets/deploy-icons/aws/Arch_AWS-Data-Exchange_64.png",
+                    "AWS DataSync": "../assets/deploy-icons/aws/Arch_AWS-DataSync_64.png",
+                    "AWS Device Farm": "../assets/deploy-icons/aws/Arch_AWS-Device-Farm_64.png",
+                    "AWS Direct Connect": "../assets/deploy-icons/aws/Arch_AWS-Direct-Connect_64.png",
+                    "AWS EC2": "../assets/deploy-icons/aws/Arch_Amazon-EC2_64.png",
+                    "AWS Elastic Beanstalk": "../assets/deploy-icons/aws/Arch_AWS-Elastic-Beanstalk_64.png",
+                    "AWS Glue": "../assets/deploy-icons/aws/Arch_AWS-Glue_64.png",
+                    "AWS Identity and Access Management": "../assets/deploy-icons/aws/Arch_AWS-Identity-and-Access-Management_64.png",
+                    "AWS IoT Analytics": "../assets/deploy-icons/aws/Arch_AWS-IoT-Analytics_64.png",
+                    "AWS IoT Device Management": "../assets/deploy-icons/aws/Arch_AWS-IoT-Device-Management_64.png",
+                    "AWS IoT SiteWise": "../assets/deploy-icons/aws/Arch_AWS-IoT-SiteWise_64.png",
+                    "AWS Lambda": "../assets/deploy-icons/aws/Arch_AWS-Lambda_64.png",
+                    "AWS Private 5G": "../assets/deploy-icons/aws/Arch_AWS-Private-5G_64.png",
+                    "AWS Serverless Application Repository": "../assets/deploy-icons/aws/Arch_AWS-Serverless-Application-Repository_64.png",
+                    "AWS Systems Manager": "../assets/deploy-icons/aws/Arch_AWS-Systems-Manager_64.png",
+                    "AWS Transfer Family": "../assets/deploy-icons/aws/Arch_AWS-Transfer-Family_64.png",
+                    "AWS Transit Gateway": "../assets/deploy-icons/aws/Arch_AWS-Transit-Gateway_64.png",
+                    "Greengrass - Bluetooth IoT Gateway": "../assets/deploy-icons/aws/Arch_AWS-IoT-Greengrass_64.png",
+                    "Greengrass - InfluxDB": "../assets/deploy-icons/aws/Arch_AWS-IoT-Greengrass_64.png",
+                    "Greengrass - ML Inference": "../assets/deploy-icons/aws/Arch_AWS-IoT-Greengrass_64.png",
+                    "Greengrass - Postgresql DB": "../assets/deploy-icons/aws/Arch_AWS-IoT-Greengrass_64.png",
+                    "Tensorflow on AWS": "../assets/deploy-icons/aws/Arch_TensorFlow-on-AWS_64.png",
+                    "Greengrass - Stream Manager": "../assets/deploy-icons/aws/Arch_AWS-IoT-Greengrass_64.png"
+                }
+
                 $scope.handleWheel = function (event) {
                     event.preventDefault(); // Prevent the default scroll behavior
                     if (event.originalEvent.deltaY < 0) {
@@ -218,6 +280,8 @@ angular.module('app')
                             const serviceName = node.data.best_service;
                             if ($scope.isGcpService(serviceName)) {
                                 node.data.icon = $scope.gcpDeploymentIcons[serviceName];
+                            } else if ($scope.isAwsService(serviceName)) {
+                                node.data.icon = $scope.awsDeploymentIcons[serviceName];
                             }
                         } else {
                             node.data.icon = ''; // No icon if no best service is assigned
@@ -236,6 +300,13 @@ angular.module('app')
                     }
                     return false;
                 }
+
+                $scope.isAwsService = function (serviceName) {
+                    if ($scope.awsDeploymentIcons[serviceName]) {
+                        return true;
+                    }
+                    return false;
+                };
             }]
         };
     });

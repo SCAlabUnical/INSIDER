@@ -1,10 +1,10 @@
-version: "3.8"
-
 services:
     frontend:
         build:
             context: ./ecc-workflow-designer
             dockerfile: Dockerfile.dev
+        environment:
+            - API_URL=http://localhost:8000/api
         ports:
             - "3000:80"
         networks:
@@ -14,8 +14,6 @@ services:
             - ./ecc-workflow-designer/nginx.conf:/etc/nginx/conf.d/default.conf
         depends_on:
             - backend
-        environment:
-            - API_URL=http://localhost:8000/api
 
     backend:
         build:
@@ -32,6 +30,7 @@ services:
                 aliases:
                     - eccd-server
         environment:
+            - GPT_KEY=${GPT_KEY}
             - DEBUG=1
             - DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1] eccd-server web 0.0.0.0
 

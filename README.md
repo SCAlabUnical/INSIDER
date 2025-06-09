@@ -1,6 +1,6 @@
 # INSIDER
 
-Welcome to the INSIDER!
+Welcome to INSIDER!
 
 INSIDER is a tool for designing and deploying edge cloud applications. It is a web-based tool that allows users to design edge cloud applications using a graphical user interface.
 
@@ -24,13 +24,17 @@ The rest of the dependencies will be installed automatically when running the `d
     ```bash
     git clone https://github.com/SCAlabUnical/INSIDER.git
     ```
+
 2. **Add the OpenAI API key**:
 
-    Inside the `INSIDER/ecc-workflow-api-server/Dockerfile.dev` file substitute this
+    Inside the `INSIDER/` folder create a file named `.env` and add the following line:
+
     ```bash
-    ENV GPT_KEY <OpenAI_API_KEY>
+    GPT_KEY=<OpenAI_API_KEY>
     ```
-    with your own OPENAI API key
+
+    where `<OpenAI_API_KEY>` is your OpenAI API key. You can obtain an API key by signing up at [OpenAI](https://platform.openai.com/signup).
+
 3. **Build the Docker images**:
 
     Navigate to the cloned repository directory and run the following command to build the Docker images:
@@ -55,11 +59,11 @@ The rest of the dependencies will be installed automatically when running the `d
 5. **Access the INSIDER application**:
    Open your web browser and navigate to `http://localhost:3000`. This will take you to the INSIDER application interface.
 
-
 You can find the complete documentation [here](https://github.com/SCAlabUnical/INSIDER/wiki).
 
 ## References
-- L. Belcastro, F. Marozzo, A. Presta, R. Varchera, A. Vinci, "Developing Platform-Agnostic IIoT Applications in Edge-Cloud Environments". 7 International Conference on Industry 4.0 & Smart Manufacturing 2024 (ISM 2024), vol. 253, pp. 2106-2115, 2025.
-- L. Belcastro, C. Cosentino, F. Marozzo, A. Presta, P. Trunfio, "Empowering Efficient Drone Monitoring with Low-Latency Edge-Cloud Continuum Platforms". 33rd Euromicro International Conference on Parallel, Distributed, and Network-Based Processing (PDP 2025), 2025.
-- F. Marozzo, A. Presta, R. Varchera, A. Vinci, "Estimating performances of Application Deployment on Distributed IoT-Edge-Cloud Infrastructures". 22nd IEEE International Conference on Pervasive Intelligence and Computing (PICom 2024), pp. 156-161, 2024.
-- L. Belcastro, F. Marozzo, A. Orsino, A. Presta, A. Vinci, "Developing Cross-Platform and Fast-Responsive Applications on the Edge-Cloud Continuum". 15th IFIP Wireless and Mobile Networking Conference (WMNC 2024), pp. 589-594, 2024
+
+-   L. Belcastro, F. Marozzo, A. Presta, R. Varchera, A. Vinci, "Developing Platform-Agnostic IIoT Applications in Edge-Cloud Environments". 7 International Conference on Industry 4.0 & Smart Manufacturing 2024 (ISM 2024), vol. 253, pp. 2106-2115, 2025.
+-   L. Belcastro, C. Cosentino, F. Marozzo, A. Presta, P. Trunfio, "Empowering Efficient Drone Monitoring with Low-Latency Edge-Cloud Continuum Platforms". 33rd Euromicro International Conference on Parallel, Distributed, and Network-Based Processing (PDP 2025), 2025.
+-   F. Marozzo, A. Presta, R. Varchera, A. Vinci, "Estimating performances of Application Deployment on Distributed IoT-Edge-Cloud Infrastructures". 22nd IEEE International Conference on Pervasive Intelligence and Computing (PICom 2024), pp. 156-161, 2024.
+-   L. Belcastro, F. Marozzo, A. Orsino, A. Presta, A. Vinci, "Developing Cross-Platform and Fast-Responsive Applications on the Edge-Cloud Continuum". 15th IFIP Wireless and Mobile Networking Conference (WMNC 2024), pp. 589-594, 2024

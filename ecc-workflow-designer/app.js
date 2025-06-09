@@ -1372,12 +1372,12 @@ angular.module('app', ['flowChart',])
 			let nodes = $scope.chartViewModel.data.nodes;
 			// For each node, add a new property 'best service' with the best service from the result
 			nodes.forEach(node => {
-				let bestService = result.find(service => service.abstractservice_id === node.id).best_service;
-				if (!bestService) {
+				let serviceResult = result.find(service => service.abstractservice_id === node.id);
+				if (!serviceResult || !serviceResult.best_service) {
 					console.warn(`No best service found for node ID ${node.id}`);
 					node.best_service = null; // or set to a default value
 				} else {
-					node.best_service = bestService;
+					node.best_service = serviceResult.best_service;
 				}
 			});
 			let connections = $scope.chartViewModel.data.connections;
@@ -1694,8 +1694,7 @@ angular.module('app', ['flowChart',])
 			} else {
 				$scope.zoomOut();
 			}
-			// Manually trigger digest cycle to apply changes
-			$scope.$apply();
+			// Note: $apply() is handled by the onWheel directive, no need to call it here
 		};
 
 		$scope.zoomIn = function () {

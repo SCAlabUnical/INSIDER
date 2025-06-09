@@ -233,6 +233,53 @@ angular.module('app')
                     "Greengrass - Stream Manager": "../assets/deploy-icons/aws/Arch_AWS-IoT-Greengrass_64.png"
                 }
 
+                $scope.azureDeploymentIcons = {
+                    "Azure Active Directory B2C": "../assets/deploy-icons/azure/azure-default-icon.svg",
+                    "Azure AD Application Proxy": "../assets/deploy-icons/azure/azure-default-icon.svg",
+                    "Azure Advisor": "../assets/deploy-icons/azure/00003-icon-service-Advisor.svg",
+                    "Azure API Management": "../assets/deploy-icons/azure/10042-icon-service-API-Management-Services.svg",
+                    "Azure App Service": "../assets/deploy-icons/azure/10035-icon-service-App-Services.svg",
+                    "Azure Automation": "../assets/deploy-icons/azure/00022-icon-service-Automation-Accounts.svg",
+                    "Azure Blob Storage": "../assets/deploy-icons/azure/azure-default-icon.svg",
+                    "Azure Cache for Redis": "../assets/deploy-icons/azure/10786-icon-service-Cache.svg",
+                    "Azure Cache for Redis Enterprise": "../assets/deploy-icons/azure/10786-icon-service-Cache.svg",
+                    "Azure Communication Services": "../assets/deploy-icons/azure/00968-icon-service-Azure-Communication-Services.svg",
+                    "Azure Container Apps": "../assets/deploy-icons/azure/02989-icon-service-Container-Apps-Environments.svg",
+                    "Azure Cosmos DB": "../assets/deploy-icons/azure/10121-icon-service-Azure-Cosmos-DB.svg",
+                    "Azure Data Factory": "../assets/deploy-icons/azure/azure-default-icon.svg",
+                    "Azure Data Share": "../assets/deploy-icons/azure/10098-icon-service-Data-Shares.svg",
+                    "Azure Database for MySQL/PostgreSQL": "../assets/deploy-icons/azure/azure-default-icon.svg",
+                    "Azure DevOps Pipelines": "../assets/deploy-icons/azure/10261-icon-service-Azure-DevOps.svg",
+                    "Azure DevTest Labs": "../assets/deploy-icons/azure/10264-icon-service-DevTest-Labs.svg",
+                    "Azure DNS": "../assets/deploy-icons/azure/10064-icon-service-DNS-Zones.svg",
+                    "Azure Event Hubs": "../assets/deploy-icons/azure/00039-icon-service-Event-Hubs.svg",
+                    "Azure ExpressRoute": "../assets/deploy-icons/azure/10079-icon-service-ExpressRoute-Circuits.svg",
+                    "Azure File Sync": "../assets/deploy-icons/azure/azure-default-icon.svg",
+                    "Azure Files": "../assets/deploy-icons/azure/10801-icon-service-Files.svg",
+                    "Azure Functions": "../assets/deploy-icons/azure/azure-default-icon.svg",
+                    "Azure HDInsight": "../assets/deploy-icons/azure/azure-default-icon.svg",
+                    "Azure IoT Central": "../assets/deploy-icons/azure/10184-icon-service-IoT-Central-Applications.svg",
+                    "Azure IoT Edge": "../assets/deploy-icons/azure/10186-icon-service-IoT-Edge.svg",
+                    "Azure IoT Hub": "../assets/deploy-icons/azure/10182-icon-service-IoT-Hub.svg",
+                    "Azure Kubernetes Service (AKS)": "../assets/deploy-icons/azure/azure-default-icon.svg",
+                    "Azure Load Balancer": "../assets/deploy-icons/azure/10062-icon-service-Load-Balancers.svg",
+                    "Azure Machine Learning": "../assets/deploy-icons/azure/10166-icon-service-Machine-Learning.svg",
+                    "Azure Managed Disks": "../assets/deploy-icons/azure/10032-icon-service-Disks.svg",
+                    "Azure Maps": "../assets/deploy-icons/azure/10185-icon-service-Azure-Maps-Accounts.svg",
+                    "Azure Media Services": "../assets/deploy-icons/azure/10309-icon-service-Azure-Media-Service.svg",
+                    "Azure Mobile Apps": "../assets/deploy-icons/azure/10822-icon-service-Mobile.svg",
+                    "Azure Monitor": "../assets/deploy-icons/azure/00001-icon-service-Monitor.svg",
+                    "Azure Policy": "../assets/deploy-icons/azure/10316-icon-service-Policy.svg",
+                    "Azure Private Link": "../assets/deploy-icons/azure/00427-icon-service-Private-Link.svg",
+                    "Azure Service Bus": "../assets/deploy-icons/azure/10836-icon-service-Azure-Service-Bus.svg",
+                    "Azure Time Series Insights": "../assets/deploy-icons/azure/10181-icon-service-Time-Series-Insights-Environments.svg",
+                    "Azure Virtual Machine Scale Sets": "../assets/deploy-icons/azure/azure-default-icon.svg",
+                    "Azure Virtual Machines": "../assets/deploy-icons/azure/10021-icon-service-Virtual-Machine.svg",
+                    "Azure Virtual Network": "../assets/deploy-icons/azure/10061-icon-service-Virtual-Networks.svg",
+                    "Azure Virtual WAN": "../assets/deploy-icons/azure/10353-icon-service-Virtual-WANs.svg",
+                    "Microsoft Exchange Online": "../assets/deploy-icons/azure/azure-default-icon.svg"
+                }
+
                 $scope.handleWheel = function (event) {
                     event.preventDefault(); // Prevent the default scroll behavior
                     if (event.originalEvent.deltaY < 0) {

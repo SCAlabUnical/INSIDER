@@ -958,8 +958,16 @@ angular.module('app', ['flowChart',])
 						const badgeSpans = container.querySelectorAll('.custom-badge');
 						let tagsArray = [];
 						badgeSpans.forEach(badge => {
-							const tagText = badge.textContent.replace('×', '').trim();
-							tagsArray.push(tagText);
+							// Get the tag text from the data-tag attribute of the remove button, or extract from text content
+							const removeButton = badge.querySelector('.remove-tag');
+							if (removeButton) {
+								const tagText = removeButton.getAttribute('data-tag');
+								tagsArray.push(tagText);
+							} else {
+								// Fallback: extract text content and remove any × characters (multiple possible forms)
+								const tagText = badge.textContent.replace(/[×&times;]/g, '').trim();
+								tagsArray.push(tagText);
+							}
 						});
 						node.tags = tagsArray;
 					}

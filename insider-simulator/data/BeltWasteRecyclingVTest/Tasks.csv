@@ -1,0 +1,16 @@
+Task type,Name,Requirement,Unit of measure
+Tc,Tc1,10000,MI
+Tn,Tn1,2.0,MB
+Tc,Tc2,80000,MI
+Tn,Tn2,1.5,MB
+Tc,Tc3,100000,MIPS
+Tn,Tn3,2.0,MB
+Tc,Tc4,5000,MI
+Tn,Tn4,2.0,MB
+Tc,Tc5,50000,MI
+Tn,Tn5,2.0,MB
+Ts,Ts1,2.0,MB
+Tn,Tn6,1.5,MB
+Ts,Ts2,2.5,MB
+Tn,Tn7,2.5,MB
+Ts,Ts3,2.5,MB

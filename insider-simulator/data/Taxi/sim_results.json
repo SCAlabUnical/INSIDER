@@ -1,0 +1,11 @@
+{
+    "simulations": [
+        {
+            "id": "00010203040500000000000000000000000000",
+            "mean_cycle_time": 0.042628,
+            "mean_work_time": 0.045826,
+            "cost": 12.94848,
+            "status": "success"
+        }
+    ]
+}

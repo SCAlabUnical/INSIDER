@@ -1,0 +1,51 @@
+1536,793
+4_Taxi,150,450
+5_Cyber-Physical Interface,350,450
+15_Device-based Traffic Monitor,150,350
+16_Cloud-based Traffic Monitor,150,250
+17_Event Monitor,150,150
+18_Passenger,150,550
+19_Cyber-Physical Interface,350,350
+22_Cyber-Physical Interface,350,550
+21_Web Interface,350,150
+20_Web Interface,350,250
+6_Publish-Subscriber Broker,550,450
+23_Publish-Subscriber Broker,550,550
+24_Publish-Subscriber Broker,550,150
+25_Publish-Subscriber Broker,550,250
+26_Streaming Protocol,550,350
+27_Public Event Collector,750,150
+29_Real-Time Traffic Monitoring (Web),750,250
+28_Web Data Storage,1050,200
+30_Real-Time Traffic Monitoring,750,350
+31_Device Data Storage,1000,400
+32_Taxi Monitoring,750,450
+33_Passenger Monitoring,750,550
+34_Location Prediction,1000,550
+35_ML Train,1250,300
+36_ML Storage,1300,550
+_4_Taxi,250,450
+_5_Cyber-Physical Interface,450,450
+_15_Device-based Traffic Monitor,250,350
+_16_Cloud-based Traffic Monitor,250,250
+_17_Event Monitor,250,150
+_18_Passenger,250,550
+_22_Cyber-Physical Interface,450,550
+_21_Web Interface,450,150
+_20_Web Interface,450,250
+_19_Cyber-Physical Interface,450,350
+_24_Publish-Subscriber Broker,650,150
+_27_Public Event Collector,900,150
+_25_Publish-Subscriber Broker,650,250
+_29_Real-Time Traffic Monitoring (Web),900,250
+_26_Streaming Protocol,650,350
+_30_Real-Time Traffic Monitoring,900,400
+_6_Publish-Subscriber Broker,650,450
+_23_Publish-Subscriber Broker,650,550
+_32_Taxi Monitoring,900,400
+_31_Device Data Storage,1150,400
+_33_Passenger Monitoring,900,550
+_28_Web Data Storage,1150,200
+_34_Location Prediction,1150,550
+_35_ML Train,1300,400
+36_ML Storage_t,1400,550

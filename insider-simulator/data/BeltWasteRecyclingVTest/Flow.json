@@ -1,0 +1,357 @@
+{
+    "nodes": [
+        {
+            "name": "Source",
+            "nameTask": "Tn0",
+            "type": "BEGIN",
+            "start": "Tn0_p",
+            "service": "",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Source"
+        },
+        {
+            "name": "Camera_acquisition",
+            "nameTask": "Tc1",
+            "type": "COMPUTE",
+            "service": "Cyber physical interface",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "split",
+                "and"
+            ],
+            "description": "Camera_acquisition"
+        },
+        {
+            "name": "Tn1_t",
+            "nameTask": "Tn1",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn1_t"
+        },
+        {
+            "name": "Image_processing",
+            "nameTask": "Tc2",
+            "type": "COMPUTE",
+            "service": "Object classifier",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Image_processing"
+        },
+        {
+            "name": "Tn2_t",
+            "nameTask": "Tn2",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn2_t"
+        },
+        {
+            "name": "Segmentation",
+            "nameTask": "Tc3",
+            "type": "COMPUTE",
+            "service": "Object classifier",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "split",
+                "and"
+            ],
+            "description": "Segmentation"
+        },
+        {
+            "name": "Tn3_t",
+            "nameTask": "Tn3",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn3_t"
+        },
+        {
+            "name": "Belt_command",
+            "nameTask": "Tc4",
+            "type": "COMPUTE",
+            "service": "Actuation Execution Planner",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "split",
+                "and"
+            ],
+            "description": "Belt_command"
+        },
+        {
+            "name": "Tn4_t",
+            "nameTask": "Tn4",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn4_t"
+        },
+        {
+            "name": "Actuator",
+            "nameTask": "Tc5",
+            "type": "COMPUTE",
+            "service": "Cyber physical interface",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Actuator"
+        },
+        {
+            "name": "Tn5_t",
+            "nameTask": "Tn5",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn5_t"
+        },
+        {
+            "name": "Ts1_t",
+            "nameTask": "Ts1",
+            "type": "STORAGE",
+            "service": "Object storage",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Ts1_t"
+        },
+        {
+            "name": "Tn6_t",
+            "nameTask": "Tn6",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn6_t"
+        },
+        {
+            "name": "Ts2_t",
+            "nameTask": "Ts2",
+            "type": "STORAGE",
+            "service": "Event storage",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Ts2_t"
+        },
+        {
+            "name": "Tn7_t",
+            "nameTask": "Tn7",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn7_t"
+        },
+        {
+            "name": "Ts3_t",
+            "nameTask": "Ts3",
+            "type": "STORAGE",
+            "service": "Event storage",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Ts3_t"
+        },
+        {
+            "name": "Collector",
+            "nameTask": "Tn8",
+            "type": "END",
+            "service": "",
+            "flowin": [
+                "join",
+                "and"
+            ],
+            "flowout": [
+                "",
+                ""
+            ],
+            "description": "Collector"
+        }
+    ],
+    "connections": [
+        {
+            "source": "Tn0",
+            "dest": "Tc1",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc1",
+            "dest": "Tn1",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc1",
+            "dest": "Tn5",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn1",
+            "dest": "Tc2",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc2",
+            "dest": "Tn2",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn2",
+            "dest": "Tc3",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc3",
+            "dest": "Tn3",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc3",
+            "dest": "Tn6",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn3",
+            "dest": "Tc4",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc4",
+            "dest": "Tn4",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc4",
+            "dest": "Tn7",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn4",
+            "dest": "Tc5",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc5",
+            "dest": "Tn8",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn5",
+            "dest": "Ts1",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts1",
+            "dest": "Tn8",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn6",
+            "dest": "Ts2",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts2",
+            "dest": "Tn8",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn7",
+            "dest": "Ts3",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts3",
+            "dest": "Tn8",
+            "probability": 1.0
+        }
+    ]
+}

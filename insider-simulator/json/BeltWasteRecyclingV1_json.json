@@ -1,0 +1,697 @@
+{
+    "nodes": [
+        {
+            "name": "Source",
+            "nameTask": "Tn0",
+            "type": "BEGIN",
+            "start": "Tn0_p",
+            "service": "",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "split",
+                "and"
+            ],
+            "resource": [
+                ""
+            ],
+            "x": -650,
+            "y": 200,
+            "description": "Source"
+        },
+        {
+            "name": "Camera_acquisition",
+            "nameTask": "Tc1",
+            "type": "COMPUTE",
+            "service": "Cyber physical interface",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "split",
+                "and"
+            ],
+            "resource": [
+                "Tc1_r"
+            ],
+            "x": -450,
+            "y": 200,
+            "description": "Camera_acquisition"
+        },
+        {
+            "name": "Tn1_t",
+            "nameTask": "Tn1",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Tn1_r"
+            ],
+            "x": -250,
+            "y": 200,
+            "description": "Tn1_t"
+        },
+        {
+            "name": "Image_processing",
+            "nameTask": "Tc2",
+            "type": "COMPUTE",
+            "service": "Object classifier",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Tc1_r"
+            ],
+            "x": -50,
+            "y": 200,
+            "description": "Image_processing"
+        },
+        {
+            "name": "Tn2_t",
+            "nameTask": "Tn2",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Tn2_r"
+            ],
+            "x": 150,
+            "y": 200,
+            "description": "Tn2_t"
+        },
+        {
+            "name": "Segmentation",
+            "nameTask": "Tc3",
+            "type": "COMPUTE",
+            "service": "Object classifier",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "split",
+                "and"
+            ],
+            "resource": [
+                "Tc3_r"
+            ],
+            "x": 350,
+            "y": 200,
+            "description": "Segmentation"
+        },
+        {
+            "name": "Tn3_t",
+            "nameTask": "Tn3",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Tn3_r"
+            ],
+            "x": 550,
+            "y": 200,
+            "description": "Tn3_t"
+        },
+        {
+            "name": "Belt_command",
+            "nameTask": "Tc4",
+            "type": "COMPUTE",
+            "service": "Actuation Execution Planner",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "split",
+                "and"
+            ],
+            "resource": [
+                "Tc3_r"
+            ],
+            "x": 750,
+            "y": 200,
+            "description": "Belt_command"
+        },
+        {
+            "name": "Tn4_t",
+            "nameTask": "Tn4",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Tn4_r"
+            ],
+            "x": 950,
+            "y": 200,
+            "description": "Tn4_t"
+        },
+        {
+            "name": "Actuator",
+            "nameTask": "Tc5",
+            "type": "COMPUTE",
+            "service": "Cyber physical interface",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Tc5_r"
+            ],
+            "x": 1150,
+            "y": 200,
+            "description": "Actuator"
+        },
+        {
+            "name": "Tn5_t",
+            "nameTask": "Tn5",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Tn5_r"
+            ],
+            "x": -300,
+            "y": 350,
+            "description": "Tn5_t"
+        },
+        {
+            "name": "Ts1_t",
+            "nameTask": "Ts1",
+            "type": "STORAGE",
+            "service": "Object storage",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Ts1_r"
+            ],
+            "x": -300,
+            "y": 450,
+            "description": "Ts1_t"
+        },
+        {
+            "name": "Tn6_t",
+            "nameTask": "Tn6",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Tn6_r"
+            ],
+            "x": 500,
+            "y": 350,
+            "description": "Tn6_t"
+        },
+        {
+            "name": "Ts2_t",
+            "nameTask": "Ts2",
+            "type": "STORAGE",
+            "service": "Event storage",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Ts1_r"
+            ],
+            "x": 500,
+            "y": 450,
+            "description": "Ts2_t"
+        },
+        {
+            "name": "Tn7_t",
+            "nameTask": "Tn7",
+            "type": "NETWORK",
+            "service": "Streaming protocol",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Tn7_r"
+            ],
+            "x": 900,
+            "y": 350,
+            "description": "Tn7_t"
+        },
+        {
+            "name": "Ts3_t",
+            "nameTask": "Ts3",
+            "type": "STORAGE",
+            "service": "Event storage",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "resource": [
+                "Ts1_r"
+            ],
+            "x": 900,
+            "y": 450,
+            "description": "Ts3_t"
+        },
+        {
+            "name": "Collector",
+            "nameTask": "Tn8",
+            "type": "END",
+            "service": "",
+            "flowin": [
+                "join",
+                "and"
+            ],
+            "flowout": [
+                "",
+                ""
+            ],
+            "resource": [
+                ""
+            ],
+            "x": 1350,
+            "y": 200,
+            "description": "Collector"
+        }
+    ],
+    "connections": [
+        {
+            "source": "Tn0_p",
+            "dest": "Tn0",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn0",
+            "dest": "Tn0_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn0",
+            "dest": "Tc1_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc1_p",
+            "dest": "Tc1",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc1_r",
+            "dest": "Tc1",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc1",
+            "dest": "Tn1_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc1",
+            "dest": "Tn5_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc1",
+            "dest": "Tc1_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn1_p",
+            "dest": "Tn1",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn1_r",
+            "dest": "Tn1",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn1",
+            "dest": "Tc2_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn1",
+            "dest": "Tn1_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc2_p",
+            "dest": "Tc2",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc1_r",
+            "dest": "Tc2",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc2",
+            "dest": "Tn2_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc2",
+            "dest": "Tc1_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn2_p",
+            "dest": "Tn2",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn2_r",
+            "dest": "Tn2",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn2",
+            "dest": "Tc3_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn2",
+            "dest": "Tn2_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc3_p",
+            "dest": "Tc3",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc3_r",
+            "dest": "Tc3",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc3",
+            "dest": "Tn3_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc3",
+            "dest": "Tn6_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc3",
+            "dest": "Tc3_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn3_p",
+            "dest": "Tn3",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn3_r",
+            "dest": "Tn3",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn3",
+            "dest": "Tc4_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn3",
+            "dest": "Tn3_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc4_p",
+            "dest": "Tc4",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc3_r",
+            "dest": "Tc4",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc4",
+            "dest": "Tn4_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc4",
+            "dest": "Tn7_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc4",
+            "dest": "Tc3_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn4_p",
+            "dest": "Tn4",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn4_r",
+            "dest": "Tn4",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn4",
+            "dest": "Tc5_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn4",
+            "dest": "Tn4_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc5_p",
+            "dest": "Tc5",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc5_r",
+            "dest": "Tc5",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc5",
+            "dest": "Tn8_p1",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc5",
+            "dest": "Tc5_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn5_p",
+            "dest": "Tn5",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn5_r",
+            "dest": "Tn5",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn5",
+            "dest": "Ts1_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn5",
+            "dest": "Tn5_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts1_p",
+            "dest": "Ts1",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts1_r",
+            "dest": "Ts1",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts1",
+            "dest": "Tn8_p2",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts1",
+            "dest": "Ts1_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn6_p",
+            "dest": "Tn6",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn6_r",
+            "dest": "Tn6",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn6",
+            "dest": "Ts2_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn6",
+            "dest": "Tn6_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts2_p",
+            "dest": "Ts2",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts1_r",
+            "dest": "Ts2",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts2",
+            "dest": "Tn8_p3",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts2",
+            "dest": "Ts1_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn7_p",
+            "dest": "Tn7",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn7_r",
+            "dest": "Tn7",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn7",
+            "dest": "Ts3_p",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn7",
+            "dest": "Tn7_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts3_p",
+            "dest": "Ts3",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts1_r",
+            "dest": "Ts3",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts3",
+            "dest": "Tn8_p4",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts3",
+            "dest": "Ts1_r",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn8_p1",
+            "dest": "Tn8",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn8_p2",
+            "dest": "Tn8",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn8_p3",
+            "dest": "Tn8",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn8_p4",
+            "dest": "Tn8",
+            "probability": 1.0
+        }
+    ]
+}

@@ -1,0 +1,440 @@
+{
+    "nodes": [
+        {
+            "name": "Source",
+            "nameTask": "Tn0",
+            "type": "BEGIN",
+            "start": "Tn0_p",
+            "service": "",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Source"
+        },
+        {
+            "name": "Passenger_Request",
+            "nameTask": "Tc1",
+            "type": "COMPUTE",
+            "service": "",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "split",
+                "and"
+            ],
+            "description": "Passenger_Request"
+        },
+        {
+            "name": "ML_Prediction",
+            "nameTask": "Tc2",
+            "type": "COMPUTE",
+            "service": "",
+            "flowin": [
+                "join",
+                "or"
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "ML_Prediction"
+        },
+        {
+            "name": "Booking_Taxi",
+            "nameTask": "Tc3",
+            "type": "COMPUTE",
+            "service": "",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "split",
+                "or"
+            ],
+            "description": "Booking_Taxi"
+        },
+        {
+            "name": "Passenger_Notification",
+            "nameTask": "Tc4",
+            "type": "COMPUTE",
+            "service": "",
+            "flowin": [
+                "join",
+                "and"
+            ],
+            "flowout": [
+                "split",
+                "or"
+            ],
+            "description": "Passenger_Notification"
+        },
+        {
+            "name": "Passenger_Load",
+            "nameTask": "Tc5",
+            "type": "COMPUTE",
+            "service": "",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Passenger_Load"
+        },
+        {
+            "name": "Taxi_Pay",
+            "nameTask": "Tc6",
+            "type": "COMPUTE",
+            "service": "",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Taxi_Pay"
+        },
+        {
+            "name": "Tn1_t",
+            "nameTask": "Tn1",
+            "type": "NETWORK",
+            "service": "Publish Subscribe",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn1_t"
+        },
+        {
+            "name": "Tn2_t",
+            "nameTask": "Tn2",
+            "type": "NETWORK",
+            "service": "Publish Subscribe",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn2_t"
+        },
+        {
+            "name": "Tn3_t",
+            "nameTask": "Tn3",
+            "type": "NETWORK",
+            "service": "Publish Subscribe",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn3_t"
+        },
+        {
+            "name": "Tn4_t",
+            "nameTask": "Tn4",
+            "type": "NETWORK",
+            "service": "Publish Subscribe",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn4_t"
+        },
+        {
+            "name": "Tn5_t",
+            "nameTask": "Tn5",
+            "type": "NETWORK",
+            "service": "Publish Subscribe",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn5_t"
+        },
+        {
+            "name": "Tn6_t",
+            "nameTask": "Tn6",
+            "type": "NETWORK",
+            "service": "Publish Subscribe",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn6_t"
+        },
+        {
+            "name": "Tn7_t",
+            "nameTask": "Tn7",
+            "type": "NETWORK",
+            "service": "Publish Subscribe",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn7_t"
+        },
+        {
+            "name": "Tn8_t",
+            "nameTask": "Tn8",
+            "type": "NETWORK",
+            "service": "Publish Subscribe",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn8_t"
+        },
+        {
+            "name": "Tn9_t",
+            "nameTask": "Tn9",
+            "type": "NETWORK",
+            "service": "Publish Subscribe",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn9_t"
+        },
+        {
+            "name": "Collector",
+            "nameTask": "Tn10",
+            "type": "END",
+            "service": "",
+            "flowin": [
+                "join",
+                "or"
+            ],
+            "flowout": [
+                "",
+                ""
+            ],
+            "description": "Collector"
+        },
+        {
+            "name": "Tn11_t",
+            "nameTask": "Tn11",
+            "type": "NETWORK",
+            "service": "Publish Subscribe",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Tn11_t"
+        },
+        {
+            "name": "Request_Data_Storage",
+            "nameTask": "Ts1",
+            "type": "STORAGE",
+            "service": "Event storage",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Request_Data_Storage"
+        },
+        {
+            "name": "Taxi_Data_Storage",
+            "nameTask": "Ts2",
+            "type": "STORAGE",
+            "service": "Event storage",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Taxi_Data_Storage"
+        },
+        {
+            "name": "Economic_Data_Storage",
+            "nameTask": "Ts3",
+            "type": "STORAGE",
+            "service": "Event storage",
+            "flowin": [
+                "single",
+                ""
+            ],
+            "flowout": [
+                "single",
+                ""
+            ],
+            "description": "Economic_Data_Storage"
+        }
+
+    ],
+    "connections": [
+        {
+            "source": "Tn0",
+            "dest": "Tc1",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc1",
+            "dest": "Tn1",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc1",
+            "dest": "Tn6",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn1",
+            "dest": "Ts1",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts1",
+            "dest": "Tn2",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn2",
+            "dest": "Tc2",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc2",
+            "dest": "Tn3",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn3",
+            "dest": "Tc3",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc3",
+            "dest": "Tn11",
+            "probability": 0.98
+        },
+        {
+            "source": "Tc3",
+            "dest": "Tn4",
+            "probability": 0.02
+        },
+        {
+            "source": "Tn4",
+            "dest": "Tc2",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn11",
+            "dest": "Ts2",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts2",
+            "dest": "Tn5",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn5",
+            "dest": "Tc4",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn6",
+            "dest": "Tc4",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc4",
+            "dest": "Tn7",
+            "probability": 0.99
+        },
+        {
+            "source": "Tc4",
+            "dest": "Tn10",
+            "probability": 0.01
+        },
+        {
+            "source": "Tn7",
+            "dest": "Tc5",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc5",
+            "dest": "Tn8",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn8",
+            "dest": "Tc6",
+            "probability": 1.0
+        },
+        {
+            "source": "Tc6",
+            "dest": "Tn9",
+            "probability": 1.0
+        },
+        {
+            "source": "Tn9",
+            "dest": "Ts3",
+            "probability": 1.0
+        },
+        {
+            "source": "Ts3",
+            "dest": "Tn10",
+            "probability": 1.0
+        }
+
+    ]
+
+}

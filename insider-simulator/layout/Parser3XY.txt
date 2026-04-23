@@ -1,0 +1,77 @@
+1536,793
+4_Routing Actuator_p,-1700,-500
+5_Conveyor Belt_p,-1700,-250
+6_Camera_p,-1700,0
+8_Publish-Subscribe Broker_p,-850,-400
+7_Cyber-Physical Interface_p,-1250,-400
+9_Cyber-Physical Interface_p,-1150,50
+10_Streaming Protocol_p,-700,50
+11_Data Preprocessing_p,-150,-300
+12_Online - Plant Optimization and Management Real Time_p,-250,-650
+13_Actuation Execution Planner_p,300,-100
+14_Object Classifier_p,100,300
+16_Event Storage_p,1200,-50
+17_Object Storage_p,1200,-250
+18_Storage Manager_p,600,-50
+19_ML Storage_p,1200,250
+20_ML Trainer_p,650,750
+21_Performance Checking & Labeling_p,700,450
+5_Conveyor Belt_p_p,-1500,-250
+4_Routing Actuator_p_p,-1500,-500
+7_Cyber-Physical Interface_p_p,-1050,-400
+6_Camera_p_p,-1550,0
+9_Cyber-Physical Interface_p_p,-1000,50
+8_Publish-Subscribe Broker_p_p,-500,-450
+_8_Publish-Subscribe Broker_p_p,-550,-250
+10_Streaming Protocol_p_p,-500,50
+12_Online - Plant Optimization and Management Real Time_p_p,150,-600
+13_Actuation Execution Planner_p_p,50,150
+11_Data Preprocessing_p_p,350,-400
+_13_Actuation Execution Planner_p_p,250,100
+14_Object Classifier_p_p,250,300
+18_Storage Manager_p_p,800,-100
+_18_Storage Manager_p_p,800,0
+_12_Online - Plant Optimization and Management Real Time_p_p,-100,-500
+_11_Data Preprocessing_p_p,50,-250
+_14_Object Classifier_p_p,250,400
+21_Performance Checking & Labeling_p_p,900,500
+20_ML Trainer_p_p,850,750
+_21_Performance Checking & Labeling_p_p,800,400
+4_Routing Actuator_p_t,-1600,-500
+5_Conveyor Belt_p_t,-1600,-250
+6_Camera_p_t,-1650,0
+8_Publish-Subscribe Broker_p_t,-700,-350
+7_Cyber-Physical Interface_p_t,-1150,-400
+9_Cyber-Physical Interface_p_t,-1100,50
+10_Streaming Protocol_p_t,-600,50
+11_Data Preprocessing_p_t,-50,-300
+12_Online - Plant Optimization and Management Real Time_p_t,-250,-550
+13_Actuation Execution Planner_p_t,150,50
+14_Object Classifier_p_t,100,450
+16_Event Storage_p_t,1350,-50
+17_Object Storage_p_t,1350,-250
+18_Storage Manager_p_t,700,-50
+19_ML Storage_p_t,1350,250
+20_ML Trainer_p_t,750,750
+21_Performance Checking & Labeling_p_t,800,500
+5_Conveyor Belt_p_p_t,-1350,-250
+4_Routing Actuator_p_p_t,-1350,-500
+7_Cyber-Physical Interface_p_p_t,-950,-400
+6_Camera_p_p_t,-1350,0
+9_Cyber-Physical Interface_p_p_t,-850,50
+8_Publish-Subscribe Broker_p_p_t,-250,-400
+_8_Publish-Subscribe Broker_p_p_t,-250,-150
+10_Streaming Protocol_p_p_t,-200,200
+12_Online - Plant Optimization and Management Real Time_p_p_t,150,-450
+13_Actuation Execution Planner_p_p_t,150,200
+11_Data Preprocessing_p_p_t,550,-250
+_13_Actuation Execution Planner_p_p_t,450,0
+14_Object Classifier_p_p_t,500,150
+18_Storage Manager_p_p_t,1000,-100
+_18_Storage Manager_p_p_t,1000,-100
+_12_Online - Plant Optimization and Management Real Time_p_p_t,250,-300
+_11_Data Preprocessing_p_p_t,150,-200
+_14_Object Classifier_p_p_t,750,350
+21_Performance Checking & Labeling_p_p_t,800,600
+20_ML Trainer_p_p_t,1050,500
+_21_Performance Checking & Labeling_p_p_t,1000,250

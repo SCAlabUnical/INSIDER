@@ -1,0 +1,42 @@
+1536,793
+4_Routing Actuator,50,100
+5_Conveyor Belt,50,250
+6_Camera,50,400
+8_Publish-Subscribe Broker,450,200
+7_Cyber-Physical Interface,250,200
+9_Cyber-Physical Interface,250,400
+10_Streaming Protocol,450,600
+11_Data Preprocessing,800,50
+12_Online - Plant Optimization and Management Real Time,850,400
+13_Actuation Execution Planner,650,400
+14_Object Classifier,750,700
+16_Event Storage,1350,350
+17_Object Storage,1350,200
+18_Storage Manager,1100,200
+19_ML Storage,1350,500
+20_ML Trainer,1250,600
+21_Performance Checking & Labeling,1150,500
+_5_Conveyor Belt,150,250
+_4_Routing Actuator,150,100
+_7_Cyber-Physical Interface,350,200
+_6_Camera,150,400
+_9_Cyber-Physical Interface,350,400
+_8_Publish-Subscribe Broker,500,100
+__8_Publish-Subscribe Broker,500,300
+_10_Streaming Protocol,600,700
+_12_Online - Plant Optimization and Management Real Time,750,500
+_13_Actuation Execution Planner,600,500
+_11_Data Preprocessing,1100,50
+__13_Actuation Execution Planner,800,200
+_14_Object Classifier,1000,550
+_18_Storage Manager,1250,300
+__18_Storage Manager,1250,200
+__12_Online - Plant Optimization and Management Real Time,900,300
+__11_Data Preprocessing,650,200
+__14_Object Classifier,1350,700
+_21_Performance Checking & Labeling,1150,600
+_20_ML Trainer,1250,500
+__21_Performance Checking & Labeling,1250,400
+16_Event Storage_t,1450,350
+17_Object Storage_t,1450,200
+19_ML Storage_t,1450,500

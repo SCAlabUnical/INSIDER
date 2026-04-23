@@ -1,0 +1,21 @@
+{
+    "mean_cycle_time": 30,
+    "mean_work_time": 10,
+    "cost": 15,
+    "rate": 10.0,
+    "fixed": {
+        "Tn1":"Tn1_r",
+        "Tn2":"Tn2_r",
+        "Tn3":"Tn3_r",
+        "Tn4":"Tn4_r",
+        "Tn5":"Tn5_r",
+        "Tn6":"Tn6_r",
+        "Tn7":"Tn7_r",
+        "Tn8":"Tn8_r",
+        "Tn9":"Tn9_r",
+        "Tn11":"Tn11_r",
+        "Ts1":"Ts1_r",
+        "Ts2":"Ts2_r",
+        "Ts3":"Ts3_r"
+    }
+}
